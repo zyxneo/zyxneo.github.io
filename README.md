@@ -1,13 +1,7 @@
-# gatsby-starter-default
-The default Gatsby starter
+# [Documentation](https://zyxneo.github.io)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+[![Build Status](https://img.shields.io/travis/zyxneo/zyxneo.github.io/master.svg)](https://travis-ci.org/zyxneo/zyxneo.github.io)
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+## Github related or experimental content
 
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+This is a personal portfolio page with experiments and references.
