@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { withPrefix } from 'gatsby-link'
+
 
 import {
   Button,
@@ -11,6 +13,7 @@ import {
   Item,
   Label,
   Menu,
+  Modal,
   Segment
 } from 'semantic-ui-react'
 
@@ -30,7 +33,7 @@ const projects = [
     title: 'manonet.org',
     subtitle: 'Free typewriter program',
     description: '',
-    image: 'manonet.org.jpg',
+    image: 'manonet.org.png',
     url: 'http://manonet.org',
     year: '',
     tags: [
@@ -127,10 +130,16 @@ const ProjectItem = (props) => {
     tags
   } = props;
 
-  const imageUrl = `/static/images/${image}`;
+  const imageUrl = `/static/images/projects/${title}/${image}`;
   return (
     <Item>
-      <Item.Image src={imageUrl} />
+      <Modal trigger={<Item.Image src={withPrefix(imageUrl)} />} closeIcon>
+        <Header icon='archive' content={title} />
+        <Modal.Content>
+          <Item.Image src={withPrefix(imageUrl)} />
+        </Modal.Content>
+      </Modal>
+
 
       <Item.Content>
         <Item.Header as='a' target="_blank" href={url}>{title}</Item.Header>
