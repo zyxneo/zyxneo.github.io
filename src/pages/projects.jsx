@@ -26,7 +26,22 @@ const projects = [
     url: 'http://bernathjudit.hu',
     year: 2006,
     tags: [
+      'Graphic Design',
+      'Photography',
       'Flash'
+    ]
+  },
+  {
+    title: 'idakeramia.hu',
+    subtitle: 'Bernáth Judit portfolio page',
+    description: 'My very first website from 2006. I make it from my own, without any help. I learned flash, I made all the photos, even the guestbook. I tried to take care on smallest details, to translate it, and to make it a worthy portfolio for Judit. I also programmed the slider. Now i recognize that I also programmed basic error handling :) It is always a nice to have. I think, I have take the advantage of animation in flash properly, plus the interactivity, the matching music (3-5 track) So it was a "full stack" project, with the first "internet learnings".',
+    image: 'idakeramia.hu.jpg',
+    url: '',
+    year: 2008,
+    tags: [
+      'Graphic Design',
+      'Photography',
+      'Joomla'
     ]
   },
   {
@@ -37,6 +52,7 @@ const projects = [
     url: 'http://manonet.org',
     year: '',
     tags: [
+      'Graphic Design',
       'Flash',
       'Joomla'
     ]
@@ -49,6 +65,7 @@ const projects = [
     url: 'http://ovarigazdasz.hu/',
     year: 2013,
     tags: [
+      'Graphic Design',
       'Joomla',
       'Bootstrap',
       'Jquery'
@@ -62,6 +79,7 @@ const projects = [
     url: 'http://lurkovarovoda.hu/',
     year: 2012,
     tags: [
+      'Graphic Design',
       'Flash'
     ]
   },
@@ -73,6 +91,7 @@ const projects = [
     url: 'http://www.mve1985.com',
     year: '',
     tags: [
+      'Photography',
       'Joomla',
       'Bootstrap'
     ]
@@ -109,13 +128,23 @@ const Tag = props => {
       color = 'brown'
       break;
 
+    case 'Photography':
+      icon = 'photo'
+      color = 'black'
+      break;
+
+    case 'Graphic Design':
+      icon = 'unhide'
+      color = 'pink'
+      break;
+
     default:
       icon = 'tag'
       color = 'gray'
       break;
   }
   return (
-    <Label icon={icon} content={content} color={color} size="mini"/>
+    <Label icon={icon} content={content} color={color} size="small"/>
   )
 }
 
@@ -134,12 +163,11 @@ const ProjectItem = (props) => {
   return (
     <Item>
       <Modal trigger={<Item.Image src={withPrefix(imageUrl)} />} closeIcon>
-        <Header icon='archive' content={title} />
+        <Header content={title} />
         <Modal.Content>
           <Item.Image src={withPrefix(imageUrl)} />
         </Modal.Content>
       </Modal>
-
 
       <Item.Content>
         <Item.Header as='a' target="_blank" href={url}>{title}</Item.Header>
