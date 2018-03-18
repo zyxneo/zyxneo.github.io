@@ -2,10 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import {
-  Button,
   Container,
   Dropdown,
-  Menu
+  Menu,
 } from 'semantic-ui-react'
 
 const FixedMenu = () => (

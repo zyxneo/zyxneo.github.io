@@ -1,20 +1,15 @@
 import React from 'react'
-import Link from 'gatsby-link'
+// import Link from 'gatsby-link';
 import { withPrefix } from 'gatsby-link'
-
 
 import {
   Button,
   Container,
-  Dropdown,
   Header,
   Icon,
-  Image as ImageComponent,
   Item,
   Label,
-  Menu,
   Modal,
-  Segment
 } from 'semantic-ui-react'
 
 const projects = [
@@ -28,21 +23,21 @@ const projects = [
     tags: [
       'Graphic Design',
       'Photography',
-      'Flash'
-    ]
+      'Flash',
+    ],
   },
   {
     title: 'idakeramia.hu',
-    subtitle: 'Bernáth Judit portfolio page',
-    description: 'My very first website from 2006. I make it from my own, without any help. I learned flash, I made all the photos, even the guestbook. I tried to take care on smallest details, to translate it, and to make it a worthy portfolio for Judit. I also programmed the slider. Now i recognize that I also programmed basic error handling :) It is always a nice to have. I think, I have take the advantage of animation in flash properly, plus the interactivity, the matching music (3-5 track) So it was a "full stack" project, with the first "internet learnings".',
+    subtitle: 'Pottery portfolio page',
+    description: '',
     image: 'idakeramia.hu.jpg',
     url: '',
     year: 2008,
     tags: [
       'Graphic Design',
       'Photography',
-      'Joomla'
-    ]
+      'Joomla',
+    ],
   },
   {
     title: 'manonet.org',
@@ -54,8 +49,8 @@ const projects = [
     tags: [
       'Graphic Design',
       'Flash',
-      'Joomla'
-    ]
+      'Joomla',
+    ],
   },
   {
     title: 'ovarigazdasz.hu',
@@ -68,8 +63,8 @@ const projects = [
       'Graphic Design',
       'Joomla',
       'Bootstrap',
-      'Jquery'
-    ]
+      'Jquery',
+    ],
   },
   {
     title: 'lurkovarovoda.hu',
@@ -80,8 +75,8 @@ const projects = [
     year: 2012,
     tags: [
       'Graphic Design',
-      'Flash'
-    ]
+      'Flash',
+    ],
   },
   {
     title: 'mve1985.com',
@@ -93,58 +88,90 @@ const projects = [
     tags: [
       'Photography',
       'Joomla',
-      'Bootstrap'
-    ]
-  }
-];
+      'Bootstrap',
+    ],
+  },
+]
 
-const Tag = props => {
-  const {content} = props;
-  let icon, color;
+const Tag = (props) => {
+  const { content } = props
+  let icon
+  let color
 
   switch (content) {
     case 'Flash':
       icon = 'lightning'
       color = 'red'
-      break;
+      break
 
     case 'Joomla':
       icon = 'joomla'
       color = 'yellow'
-      break;
+      break
 
     case 'Bootstrap':
       icon = 'bold'
       color = 'blue'
-      break;
+      break
 
     case 'Jquery':
       icon = 'hand outline up'
       color = 'orange'
-      break;
+      break
 
     case 'Google Maps':
       icon = 'globe'
       color = 'brown'
-      break;
+      break
 
     case 'Photography':
       icon = 'photo'
       color = 'black'
-      break;
+      break
 
     case 'Graphic Design':
       icon = 'unhide'
       color = 'pink'
-      break;
+      break
 
     default:
       icon = 'tag'
       color = 'gray'
-      break;
+      break
   }
   return (
-    <Label icon={icon} content={content} color={color} size="small"/>
+    <Label icon={icon} content={content} color={color} size='small' />
+  )
+}
+
+const VisitButton = (props) => {
+  const { url } = props
+
+  if (url === '' || typeof url === 'undefined') {
+    return (
+      <Button disabled floated='right'>
+        offline
+      </Button>
+    )
+  }
+  return (
+    <Button as='a' target='_blank' primary floated='right' href={url}>
+      visit
+      <Icon name='right chevron' />
+    </Button>
+  )
+}
+
+const ProjectTitle = (props) => {
+  const { url, title } = props
+
+  if (url === '' || typeof url === 'undefined') {
+    return (
+      <Item.Header>{title}</Item.Header>
+    )
+  }
+  return (
+    <Item.Header as='a' target='_blank' href={url}>{title}</Item.Header>
   )
 }
 
@@ -156,10 +183,11 @@ const ProjectItem = (props) => {
     image,
     url,
     year,
-    tags
-  } = props;
+    tags,
+  } = props
 
-  const imageUrl = `/static/images/projects/${title}/${image}`;
+  const imageUrl = `/static/images/projects/${title}/${image}`
+
   return (
     <Item>
       <Modal trigger={<Item.Image src={withPrefix(imageUrl)} />} closeIcon>
@@ -170,17 +198,14 @@ const ProjectItem = (props) => {
       </Modal>
 
       <Item.Content>
-        <Item.Header as='a' target="_blank" href={url}>{title}</Item.Header>
+        <ProjectTitle url={url} title={title} />
         <Item.Meta>{subtitle} - {year}</Item.Meta>
         <Item.Description>{description}</Item.Description>
         <Item.Extra>
           {
-            tags.map((item, index) => (<Tag content={item} key={index}/>))
+            tags.map(item => (<Tag content={item} key={item} />))
           }
-          <Button as="a" target="_blank" primary floated='right' href={url}>
-            visit
-            <Icon name='right chevron' />
-          </Button>
+          <VisitButton url={url} />
         </Item.Extra>
       </Item.Content>
     </Item>
@@ -192,10 +217,10 @@ const ProjectsPage = () => (
   <Container>
     <h1>Projects</h1>
 
-    <p>Below listed several pages from my free-time projects. For work related projects visit <a href="https://hu.linkedin.com/in/balázs-szilágyi-112987121">linkedin</a></p>
+    <p>Below listed several pages from my free-time projects. For work related projects visit <a href='https://hu.linkedin.com/in/balázs-szilágyi-112987121'>linkedin</a></p>
 
     <Item.Group divided>
-      {projects.map((item, index) => (<ProjectItem {...item} key={index}/>))}
+      {projects.map(item => (<ProjectItem {...item} key={item.title} />))}
     </Item.Group>
 
     <h2>Websites (private)</h2>
@@ -203,10 +228,9 @@ const ProjectsPage = () => (
     <h2>Development</h2>
 
     <ul>
-      <li><a href="https://zyxneo.github.io/flexbox/">zyxneo.github.io/flexbox/</a> - Flexbox experiment</li>
-      <li><a href="https://zyxneo.github.io/css/">zyxneo.github.io/css/</a> - CSS experiments</li>
-      <li><a href="https://github.com/zyxneo/checklist/blob/master/website-launch-checklist.md">launchlist</a> - Checklist collection for creating, launching, updating and testing web projects</li>
-      <li><a href=""></a></li>
+      <li><a href='https://zyxneo.github.io/flexbox/'>zyxneo.github.io/flexbox/</a> - Flexbox experiment</li>
+      <li><a href='https://zyxneo.github.io/css/'>zyxneo.github.io/css/</a> - CSS experiments</li>
+      <li><a href='https://github.com/zyxneo/checklist/blob/master/website-launch-checklist.md'>launchlist</a> - Checklist collection for creating, launching, updating and testing web projects</li>
     </ul>
 
   </Container>

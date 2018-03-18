@@ -1,20 +1,18 @@
 {
-  "extends": ["@cherihung/gatsby"],
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
   "rules": {
-    "indent": [2, 2],
-    "linebreak-style": [2,"unix"],
     "newline-per-chained-call": 0,
     "class-methods-use-this": 0,
     "consistent-return": 0,
-    "comma-dangle": [2, "never"],
     "complexity": [1, 10],
     "global-require": 0,
-    "jsx-quotes": [2, "prefer-double"],
-    "max-len": [1, { "code": 2000, "ignoreComments": true }],
-    "no-confusing-arrow": 0,
-    "no-console": [1, { "allow": ["info", "error"] }],
+    "jsx-quotes": [2, "prefer-single"],
+    "max-len": [0, 120, 4],
+    "no-console": 2,
     "no-multi-spaces": [2, { "ignoreEOLComments": true }],
-    "no-plusplus": 0,
     "no-return-assign": [2, "except-parens"],
     "no-underscore-dangle": 0,
     "padded-blocks": [2, {
@@ -22,13 +20,8 @@
       "switches": "never",
       "classes": "never"
     }],
-    "semi": [1, "never"],
+    "semi": [2, "never"],
     "jsx-a11y/alt-text": 1,
-    "jsx-a11y/anchor-is-valid": [ 0, {
-      "components": [ "Link" ],
-      "specialLink": [ "hrefLeft", "hrefRight" ],
-      "aspects": [ "noHref", "invalidHref", "preferButton" ]
-    }],
     "jsx-a11y/label-has-for": 1,
     "jsx-a11y/role-has-required-aria-props": 1,
     "import/no-dynamic-require": 0,
@@ -37,7 +30,7 @@
     "import/no-webpack-loader-syntax": 0,
     "import/extensions": 0,
     "react/forbid-prop-types": 0,
-    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [2, { "extensions": [".js",".jsx"] }],
     "react/no-unused-prop-types": 0,
     "react/sort-comp": 0,
     "react/require-default-props": 0

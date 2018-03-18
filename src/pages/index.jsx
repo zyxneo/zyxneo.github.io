@@ -1,13 +1,12 @@
 import React from 'react'
-import Link from 'gatsby-link'
+// import Link from 'gatsby-link'
+
 import {
   Button,
   Container,
-  Dropdown,
   Header,
   Icon,
-  Menu,
-  Segment
+  Segment,
 } from 'semantic-ui-react'
 
 const IndexPage = () => (
@@ -23,7 +22,9 @@ const IndexPage = () => (
           as='h1'
           content='Imagine-a-Company'
           inverted
-          style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '3em' }}
+          style={{
+ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '3em',
+}}
         />
         <Header
           as='h2'
