@@ -19,10 +19,7 @@ const LayoutFooter = () => (
           <Grid.Column width={5}>
             <Header inverted as='h4' content='About' />
             <List link inverted>
-              <List.Item as='a'>Sitemap</List.Item>
-              <List.Item as='a'>Contact Us</List.Item>
-              <List.Item as='a'>Religious Ceremonies</List.Item>
-              <List.Item as='a'>Gazebo Plans</List.Item>
+              <List.Item as='a'>Soon</List.Item>
             </List>
           </Grid.Column>
           <Grid.Column width={5}>

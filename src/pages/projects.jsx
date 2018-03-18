@@ -81,16 +81,30 @@ const projects = [
     ],
   },
   {
-    title: 'mve1985.com',
+    title: 'mve1985.hu',
     subtitle: 'Mosonmagyaróvári Városvédő Egyesületet',
     description: '',
-    image: 'mve1985.com.jpg',
-    url: 'http://www.mve1985.com',
-    year: '',
+    image: 'mve1985.hu.jpg',
+    url: 'http://www.mve1985.hu',
+    year: '2016',
     tags: [
       'Photography',
       'Joomla',
       'Bootstrap',
+    ],
+  },
+  {
+    title: 'ialb-eufras-2018.org',
+    subtitle: '57th IALB and 7th EUFRAS Agriculture Conference 2018',
+    description: '',
+    image: 'ialb-eufras-2018.org.jpg',
+    url: 'http://ialb-eufras-2018.org',
+    year: '2017',
+    tags: [
+      'Graphic Design',
+      'Joomla',
+      'Bootstrap',
+      'Google Maps'
     ],
   },
 ]
@@ -188,7 +202,7 @@ const ProjectItem = (props) => {
     tags,
   } = props
 
-  const imageUrl = `/static/images/projects/${title}/${image}`
+  const imageUrl = `/images/projects/${title}/${image}`
 
   return (
     <Item>

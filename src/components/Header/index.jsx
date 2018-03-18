@@ -21,8 +21,7 @@ const FixedMenu = () => (
         <Menu.Menu position='right'>
           <Dropdown item text='Language'>
             <Dropdown.Menu>
-              <Dropdown.Item>English</Dropdown.Item>
-              <Dropdown.Item>Magyar</Dropdown.Item>
+              <Dropdown.Item>Soon</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </Menu.Menu>
