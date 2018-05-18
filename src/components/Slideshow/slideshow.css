@@ -1,0 +1,15 @@
+.ui.image.slideshow  {
+  transition: opacity .2s;
+}
+
+.ui.image.slideshow.deselected {
+  opacity: 1;
+}
+
+.ui.image.slideshow:hover  {
+  opacity: .8;
+}
+
+.ui.image.slideshow.selected {
+  opacity: .5;
+}

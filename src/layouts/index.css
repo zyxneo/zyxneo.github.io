@@ -1,3 +1,7 @@
 body {
   background: #ddd;
 }
+
+.ui.image.thumbnail {
+  vertical-align: top;
+}

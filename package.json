@@ -8,8 +8,8 @@
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "react-helmet": "^5.2.0",
-    "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.77.2"
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.80.0"
   },
   "keywords": [
     "gatsby"
