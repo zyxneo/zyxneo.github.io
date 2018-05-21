@@ -168,7 +168,7 @@ export const privateProjects = [
     description: 'The "Lipóti Pékség" is a developing, succesfull bakery in Hungary. I was lucky, that I could made the first webpage for them. Unfortunately I don&apos;t find any file from this project any more...',
     image: '',
     url: '',
-    year: 2008,
+    year: 2007,
     tags: [
       'Graphic Design',
       'Photography',
@@ -179,10 +179,10 @@ export const privateProjects = [
     title: 'magyargaleria.hu',
     alias: 'magyargaleria.hu',
     subtitle: 'Art gallery portfolio page',
-    description: 'While doing this page, I wanted to focus on fine effects and animations to make the page similar like the fanciest one in that era. Unfortunately I did not know how to program that in actionscript yet, so most of the behaviour was made with simple flash tweens. I do not even remember how I integrated the 3D effect of the logo on the startpage... On endeffect the page was working fine, and I learned a lot this time too.',
+    description: 'While creating this page, I wanted to focus on fine effects and animations to make the page similar like the fanciest one in that era. Unfortunately I did not know how to program that in actionscript yet, so most of the behaviour was made with simple flash tweens. I do not even remember how I integrated the 3D effect of the logo on the startpage... Ultimately the page was working fine, and I learned a lot this time too. Sound design, 3D, photos and scans was made by me.',
     image: 'magyargaleria.hu.jpg',
     url: '',
-    year: 2008,
+    year: 2007,
     tags: [
       'Graphic Design',
       'Photography',
