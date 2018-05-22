@@ -5,3 +5,8 @@ body {
 .ui.image.thumbnail {
   vertical-align: top;
 }
+
+.work-content,
+.projects-content {
+  padding-bottom: 5em;
+}
