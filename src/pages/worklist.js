@@ -15,27 +15,27 @@ export const work = [
       {
         name: "zatony.hu",
         alias: "zatony.hu",
-        preview: '/images/projects/zatony.hu/zatony.hu.png'
+        preview: '/images/projects/zatony.hu/zatony.hu-1.jpg'
       },
       {
         name: "csemeteplussz.hu",
         alias: "csemeteplussz.hu",
-        preview: '/images/projects/csemeteplussz.hu/csemeteplussz.hu.png'
+        preview: '/images/projects/csemeteplussz.hu/csemeteplussz.hu-1.jpg'
       },
       {
         name: "gyorilovag.hu",
         alias: "gyorilovag.hu",
-        preview: '/images/projects/gyorilovag.hu/gyorilovag.hu.png'
+        preview: '/images/projects/gyorilovag.hu/gyorilovag.hu-1.jpg'
       },
       {
         name: "ordogkonyha.hu",
         alias: "ordogkonyha.hu",
-        preview: '/images/projects/ordogkonyha.hu/ordogkonyha.hu.png'
+        preview: '/images/projects/ordogkonyha.hu/ordogkonyha.hu-1.jpg'
       },
       {
         name: "satorberbeadas.hu",
         alias: "satorberbeadas.hu",
-        preview: '/images/projects/satorberbeadas.hu/satorberbeadas.hu.png'
+        preview: '/images/projects/satorberbeadas.hu/satorberbeadas.hu-1.jpg'
       },
     ],
     furtherProjects: [
@@ -94,22 +94,22 @@ export const work = [
       {
         name: "gametwist.com",
         alias: "gametwist.com",
-        preview: '/images/projects/gametwist.com/gametwist.com.png'
+        preview: '/images/projects/gametwist.com/gametwist.com.jpg'
       },
       {
         name: "skill7.com",
         alias: "skill7.com",
-        preview: '/images/projects/skill7.com/skill7.com.png'
+        preview: '/images/projects/skill7.com/skill7.com.jpg'
       },
       {
         name: "stargames.com",
         alias: "stargames.com",
-        preview: '/images/projects/stargames.com/stargames.com.png'
+        preview: '/images/projects/stargames.com/stargames.com.jpg'
       },
       {
         name: "feniksscasino.lv",
         alias: "feniksscasino.lv",
-        preview: '/images/projects/feniksscasino.lv/feniksscasino.lv.png'
+        preview: '/images/projects/feniksscasino.lv/feniksscasino.lv.jpg'
       },
     ],
     furtherProjects: [

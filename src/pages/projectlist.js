@@ -2,9 +2,10 @@
 export const projects = [
   {
     title: 'zatony.hu',
+    alias: 'zatony.hu',
     subtitle: '',
     description: '',
-    image: 'zatony.hu.jpg',
+    image: 'zatony.hu-1.jpg',
     url: 'http://zatony.hu/',
     year: 2009,
     tags: [
@@ -12,12 +13,25 @@ export const projects = [
       'HTML',
       'CSS'
     ],
+    images: [
+      {
+        title: 'Gallery',
+        desc: 'Like the whole design, the green flag was also vector-painted in Fireworks.',
+        src: 'zatony.hu.jpg'
+      },
+      {
+        title: 'Footer',
+        desc: 'Fixed background',
+        src: 'zatony.hu-0.jpg'
+      },
+    ]
   },
   {
     title: 'gyorilovag.hu',
+    alias: 'gyorilovag.hu',
     subtitle: '',
     description: '',
-    image: 'gyorilovag.hu.jpg',
+    image: 'gyorilovag.hu-1.jpg',
     url: 'http://gyorilovag.hu/ ',
     year: 2009,
     tags: [
@@ -26,12 +40,25 @@ export const projects = [
       'CSS',
       'Flash'
     ],
+    images: [
+      {
+        title: 'Flash Map',
+        desc: '',
+        src: 'gyorilovag.hu.jpg'
+      },
+      {
+        title: 'Gallery',
+        desc: '',
+        src: 'gyorilovag.hu-0.jpg'
+      },
+    ]
   },
   {
     title: 'satorberbeadas.hu',
+    alias: 'satorberbeadas.hu',
     subtitle: '',
     description: '',
-    image: 'satorberbeadas.hu.jpg',
+    image: 'satorberbeadas.hu-1.jpg',
     url: 'http://www.satorberbeadas.hu/',
     year: 2009,
     tags: [
@@ -39,27 +66,41 @@ export const projects = [
       'HTML',
       'CSS'
     ],
+    images: [
+      {
+        title: 'Homepage',
+        desc: '',
+        src: 'satorberbeadas.hu.jpg'
+      }
+    ]
   },
   {
-    title: 'johidegkonyha.hu',
+    title: 'ordogkonyha.hu',
+    alias: 'ordogkonyha.hu',
     subtitle: '',
     description: '',
-    image: 'johidegkonyha.hu.jpg',
+    image: 'ordogkonyha.hu-1.jpg',
     url: '',
     year: 2009,
     tags: [
       'Graphic Design',
       'HTML',
-      'CSS',
-      'Flash'
+      'CSS'
     ],
+    images: [
+      {
+        title: 'Homepage',
+        desc: '',
+        src: 'ordogkonyha.hu.jpg'
+      }
+    ]
   },
   {
     title: 'The Bugs',
     alias: 'greentube-the-bugs',
     subtitle: 'Applying for Front-End developer position to Greentube with an example',
     description: '',
-    image: 'greentube-the-bugs-0.png',
+    image: 'greentube-the-bugs.jpg',
     url: 'https://zyxneo.github.io/Applying-to-Greentube-Solution-1-The-Bugs/',
     year: 2009,
     tags: [
@@ -70,7 +111,12 @@ export const projects = [
       {
         title: 'Bug collection header',
         desc: '',
-        src: 'greentube-the-bugs-0.png'
+        src: 'greentube-the-bugs-0.jpg'
+      },
+      {
+        title: 'Footer',
+        desc: '',
+        src: 'greentube-the-bugs-1.jpg'
       }
     ]
   },
@@ -102,6 +148,7 @@ export const projects = [
   },
   {
     title: 'Gametwist',
+    alias: 'gametwist.com',
     subtitle: '',
     description: '',
     image: '',
@@ -114,6 +161,7 @@ export const projects = [
   },
   {
     title: 'Skill7',
+    alias: 'skill7.com',
     subtitle: '',
     description: '',
     image: '',
@@ -126,6 +174,7 @@ export const projects = [
   },
   {
     title: '',
+    alias: '',
     subtitle: '',
     description: '',
     image: '',
@@ -224,12 +273,12 @@ export const privateProjects = [
       {
         title: 'Design 1',
         desc: 'I usually designed pages in Photoshop or Fireworks',
-        src: 'idakeramia-design-1.png'
+        src: 'idakeramia-design-1.jpg'
       },
       {
         title: 'Design 2',
         desc: 'It was taken some time, till I found the desired look and feel...',
-        src: 'idakeramia-design-2.png'
+        src: 'idakeramia-design-2.jpg'
       },
       {
         title: 'Design 3',
@@ -338,7 +387,7 @@ export const privateProjects = [
     alias: 'manonet.org',
     subtitle: 'Free typewriter program',
     description: 'One of my favourite and definitely the biggest private project. I wanted to learn typing with ten fingers, like pople shoud normally. But in that time there was only books, or payed programs available. I was boring to copy the text from the books, so I decided to create a textinput in flash, which compares the string I write with the correct one. Than I highlighted the errors. Than displayed statistic and so on. So I was not learning anymore, but started to program. I liked it so much, that I published it on the net, so anyone could using it. It had a toplist too. Later it turned out, that the way it works is "not optimal" for the server. So I wrote a new version of it. And a new again, I think the fourth one was the one online the longest time. Based on the feedbacks people loved it, so it is still online, even if flash is death sine that. It has so many hidden features, that sometime it can suprise me too.',
-    image: 'manonet.org.png',
+    image: 'manonet.org.jpg',
     url: 'http://manonet.org',
     year: '',
     tags: [

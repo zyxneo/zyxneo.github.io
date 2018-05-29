@@ -145,7 +145,7 @@ const ProjectItem = (props) => {
     images
   } = props
 
-  const imageUrl = `/images/projects/${title}/${image}`
+  const imageUrl = `/images/projects/${alias}/${image}`
 
   return (
     <Item id={alias}>
