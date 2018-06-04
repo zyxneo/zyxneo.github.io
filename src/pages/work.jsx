@@ -14,6 +14,7 @@ import {
 import ImageList from '../components/ImageList'
 
 import { work } from './worklist'
+import { projects } from './projectlist'
 
 const ProjectPreview = (props) => {
   const {
@@ -41,11 +42,12 @@ const WorkItem = (props) => {
     workedTill,
     position,
     jobDescription,
-    projects,
     furtherProjects
   } = props
 
+  const workplaceProjects = projects.filter(p => p.company === workplaceId)
   const LogoUrl = `/images/work/${workplaceId}/${workplaceLogo}`
+
   return (
     <Item>
       <Item.Image src={LogoUrl} />
@@ -55,21 +57,20 @@ const WorkItem = (props) => {
         <Item.Meta>({workedFrom} - {workedTill})</Item.Meta>
         <Item.Description><em>Job description:</em> <div dangerouslySetInnerHTML={{__html: jobDescription}} /></Item.Description>
 
-
-        {projects && <Item.Header>Projects</Item.Header>}
-        {projects && <Image.Group size='tiny'>
-          {projects.map(item => (
+        {!!workplaceProjects.length && <Item.Header>Projects</Item.Header>}
+        {!!workplaceProjects.length && <Image.Group size='tiny'>
+          {workplaceProjects.map(item => (
             <Popup
+              key={item.src}
               trigger={
                 <Image
-                  key={item.src}
-                  src={item.preview}
+                  src={`/images/projects/${item.alias}/${item.image}`}
                   as={Link}
                   to={`/projects#${item.alias}`}
                   className="thumbnail"
                 />
               }
-              content={item.name}
+              content={<div><b>{item.title}</b><p>{item.subtitle}</p></div>}
             />
           ))}
         </Image.Group>}
@@ -95,7 +96,7 @@ const WorkPage = () => (
 
     <h4>Disclaimer</h4>
 
-    <p>Please notice that none of the mentioned online projects are my property. They can be changed in any time by the owners. There is a high chance, that the example projects may not reflect they state at the point when I was workin on them. The following list was made by me, based on my workexperience, without any permission or agreement of the companies, owners or stakeholders.</p>
+    <p>Please notice that none of the mentioned online projects on this page are my property. They can be changed in any time by the owners. There is a high chance, that the example projects may not reflect they state at the point when I was workin on them. The following list was made by me, based on my workexperience, without any permission or agreement of the companies, owners or stakeholders. I was worked as a team member in all of the companies, we was made teamwork, none of the projects are my individual work.</p>
 
     <Item.Group divided>
       {work.map(item => (<WorkItem {...item} key={item.workplaceId} />))}

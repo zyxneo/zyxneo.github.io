@@ -11,33 +11,6 @@ export const work = [
     workedTill: 2009,
     position: 'Graphic and Sitebuilder',
     jobDescription: 'Creating graphic design for clients in Fireworks, "sliceing" the self made or other designs, creating web templates and implementing the templates into the multisite CMS system. Designing and programming flash banners or flash webpage components.',
-    projects: [
-      {
-        name: "zatony.hu",
-        alias: "zatony.hu",
-        preview: '/images/projects/zatony.hu/zatony.hu-1.jpg'
-      },
-      {
-        name: "csemeteplussz.hu",
-        alias: "csemeteplussz.hu",
-        preview: '/images/projects/csemeteplussz.hu/csemeteplussz.hu-1.jpg'
-      },
-      {
-        name: "gyorilovag.hu",
-        alias: "gyorilovag.hu",
-        preview: '/images/projects/gyorilovag.hu/gyorilovag.hu-1.jpg'
-      },
-      {
-        name: "ordogkonyha.hu",
-        alias: "ordogkonyha.hu",
-        preview: '/images/projects/ordogkonyha.hu/ordogkonyha.hu-1.jpg'
-      },
-      {
-        name: "satorberbeadas.hu",
-        alias: "satorberbeadas.hu",
-        preview: '/images/projects/satorberbeadas.hu/satorberbeadas.hu-1.jpg'
-      },
-    ],
     furtherProjects: [
       'https://teknosfestek.hu',
       'http://johidegkonyha.hu/',
@@ -90,31 +63,8 @@ export const work = [
       <li>Development of dynamic Styleguide</li>\
       <li>As member Automatizing and Test with Grunt, Gulp, Jenkins, Selenium</li>\
     </ul>',
-    projects: [
-      {
-        name: "gametwist.com",
-        alias: "gametwist.com",
-        preview: '/images/projects/gametwist.com/gametwist.com.jpg'
-      },
-      {
-        name: "skill7.com",
-        alias: "skill7.com",
-        preview: '/images/projects/skill7.com/skill7.com.jpg'
-      },
-      {
-        name: "stargames.com",
-        alias: "stargames.com",
-        preview: '/images/projects/stargames.com/stargames.com.jpg'
-      },
-      {
-        name: "feniksscasino.lv",
-        alias: "feniksscasino.lv",
-        preview: '/images/projects/feniksscasino.lv/feniksscasino.lv.jpg'
-      },
-    ],
     furtherProjects: [
-      'https://beatya.com',
-      'http://starvegas.it'
+      'https://beatya.com'
     ]
   },
   {
@@ -149,13 +99,6 @@ export const work = [
     <li>Also several interesting solutions was also created, like the CSS only Lotto Balls, the flexbox "grid like" responsive accordion, or the "real-time" Tournaments items.</li>\
     </ul>\
     ',
-    projects: [
-      {
-        name: "Win2Day",
-        alias: "win2day.at",
-        preview: '/images/work/seso/win2day.at-1.jpg'
-      }
-    ],
   },
   {
     workplaceId: 'radarservices',

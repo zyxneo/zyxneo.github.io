@@ -13,3 +13,19 @@
 .ui.image.slideshow.selected {
   opacity: .5;
 }
+
+.slideshow.content {
+  position: relative;
+}
+
+.slideshow.image {
+  margin: auto;
+}
+
+.slideshow.desc {
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  max-width: 80%;
+  margin: auto;
+}

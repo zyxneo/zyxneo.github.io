@@ -169,6 +169,7 @@ const ProjectItem = (props) => {
                 items={images}
                 selectedIndex={index}
                 title={title}
+                alias={alias}
               />
             ))
           }

@@ -20,8 +20,10 @@ type SlideshowImage = {
 
 type SlideshowProps = {
   items: Array<SlideshowImage>,
+  item: SlideshowImage,
   selectedIndex: Number,
   title: string,
+  alias: string,
 }
 
 type State = {
@@ -50,7 +52,8 @@ class Slideshow extends React.PureComponent<SlideshowProps, State> {
     const {
       item,
       items,
-      title
+      title,
+      alias
     } = this.props;
 
     const selectedItem = items[selectedIndex]
@@ -58,7 +61,7 @@ class Slideshow extends React.PureComponent<SlideshowProps, State> {
       <Modal
         trigger={
           <Image
-            src={`/images/projects/${title}/${item.src}`}
+            src={`/images/projects/${alias}/${item.src}`}
             as='a'
             className="thumbnail"
           />
@@ -70,9 +73,9 @@ class Slideshow extends React.PureComponent<SlideshowProps, State> {
           <Header>{title} - {selectedItem.title}</Header>
         </Modal.Header>
         <Modal.Content image scrolling>
-          <Container textAlign='center'>
-            <Image src={`/images/projects/${title}/${selectedItem.src}`} fluid/>
-            <div dangerouslySetInnerHTML={{__html: selectedItem.desc}} />
+          <Container textAlign='center' className="slideshow content">
+            <Image className="slideshow" src={`/images/projects/${alias}/${selectedItem.src}`} />
+            <div className="slideshow desc" dangerouslySetInnerHTML={{__html: selectedItem.desc}} />
           </Container>
         </Modal.Content>
         <Modal.Actions textAlign='center'>
@@ -81,7 +84,7 @@ class Slideshow extends React.PureComponent<SlideshowProps, State> {
             {
               items && items.map((item, index) => (
                 <Image
-                  src={`/images/projects/${title}/${item.src}`}
+                  src={`/images/projects/${alias}/${item.src}`}
                   key={item.src}
                   as='a'
                   onClick={() => (this.setSelected(index))}
