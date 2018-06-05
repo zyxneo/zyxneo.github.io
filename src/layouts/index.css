@@ -10,7 +10,6 @@ body {
 
 .ui.tiny.image,
 .ui.tiny.images .image {
-  max-height: 80px;
   overflow: hidden;
   display: inline-flex;
 }
@@ -22,4 +21,12 @@ body {
 .work-content,
 .projects-content {
   padding-bottom: 5em;
+}
+
+.ui.tiny.image,
+.ui.tiny.images .image,
+.ui.tiny.images img,
+.ui.tiny.images svg {
+  width: auto;
+  height: 80px;
 }

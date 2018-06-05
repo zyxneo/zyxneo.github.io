@@ -1,16 +1,16 @@
-.ui.image.slideshow  {
+.ui.image.slideshow.thumbnail  {
   transition: opacity .2s;
 }
 
-.ui.image.slideshow.deselected {
+.ui.image.slideshow.thumbnail.deselected {
   opacity: 1;
 }
 
-.ui.image.slideshow:hover  {
+.ui.image.slideshow.thumbnail:hover  {
   opacity: .8;
 }
 
-.ui.image.slideshow.selected {
+.ui.image.slideshow.thumbnail.selected {
   opacity: .5;
 }
 

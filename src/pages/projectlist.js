@@ -164,7 +164,7 @@ export const projects = [
     title: 'Skill7',
     alias: 'greentube-skill7',
     subtitle: 'Online skill gaming platform',
-    description: '',
+    description: 'Skill7 was a "skill only" platform, so no casino games, or any kind of gambling was available on the page. Development was run in parallel with Gametwist. We started with a redesign before Gametwist. I was working on this page at least 4 years long. However, the attached images are downloaded from the internet.',
     image: 'greentube-skill7.jpg',
     url: 'http://skill7.com',
     year: '2009 - 2012',
@@ -173,12 +173,74 @@ export const projects = [
       'HTML',
       'CSS',
     ],
+    images: [
+      {
+        title: 'Logged in',
+        desc: 'The menü in the header contains the default settings of a new player. (The typography is broken on this screen)',
+        src: 'greentube-skill7-0.jpg'
+      },
+      {
+        title: 'Logged out',
+        desc: 'The upper part of the page was a big embedded flash teaser with configurable content.',
+        src: 'greentube-skill7-1.jpg'
+      },
+      {
+        title: 'Games categories',
+        desc: 'The game items was build on the same way as the gametwist one.',
+        src: 'greentube-skill7-2.jpg'
+      },
+      {
+        title: 'Game category',
+        desc: 'Even the game logos was translated',
+        src: 'greentube-skill7-3.jpg'
+      },
+      {
+        title: 'Game details (top segment)',
+        desc: 'In the sidebar different content was displayed based on user and game status',
+        src: 'greentube-skill7-4.jpg'
+      },
+      {
+        title: 'Game details - tournament',
+        desc: 'The complexity of the tournament games page was quite high.',
+        src: 'greentube-skill7-5.jpg'
+      },
+      {
+        title: 'Game window',
+        desc: 'With basic details and resize icons.',
+        src: 'greentube-skill7-6.jpg'
+      },
+      {
+        title: 'Table styles',
+        desc: 'Tables was coming directly from a CMS system with various structure and classes, it was a challange to format them in the proper way. It was a wery good learning.',
+        src: 'greentube-skill7-7.jpg'
+      },
+      {
+        title: 'Pay in',
+        desc: 'Based on the user status different bonusses was calculated.',
+        src: 'greentube-skill7-8.jpg'
+      },
+      {
+        title: 'Registration',
+        desc: 'The complexity of registration form was raised after EU regulation of tax.',
+        src: 'greentube-skill7-9.jpg'
+      },
+      {
+        title: 'Help',
+        desc: 'This page was hidden, however the content was rich.',
+        src: 'greentube-skill7-10.jpg'
+      },
+      {
+        title: 'Sticky header',
+        desc: 'The certificates in the footer shows that we had to update the content from time to time to fulfill the law requirements.',
+        src: 'greentube-skill7-11.jpg'
+      },
+    ]
   },
   {
     title: 'Stargames',
     alias: 'greentube-stargames',
     subtitle: 'Online casino',
-    description: '',
+    description: 'Stargames was a casino platform, any games with gambling could appear here. The content was changed relative often, jackpots was continously offered for many games. I was support the frontend development of this page at least 4 years long. However, the attached images are downloaded from the internet.',
     image: 'greentube-stargames.jpg',
     url: 'http://stargames.com',
     year: 2009,
@@ -187,6 +249,82 @@ export const projects = [
       'HTML',
       'CSS',
     ],
+    images: [
+      {
+        title: 'Homepage',
+        src: 'greentube-stargames-1.jpg'
+      },
+      {
+        title: 'Logged in',
+        desc: 'The menü in the header contains the settings of a player. You can see the small "jackpot banner" too which was rotating like an odometer.',
+        src: 'greentube-stargames-0.jpg'
+      },
+      {
+        title: 'Homepage alternative',
+        desc: '',
+        src: 'greentube-stargames-3.jpg'
+      },
+      {
+        title: 'Homepage alternative',
+        desc: '',
+        src: 'greentube-stargames-7.jpg'
+      },
+      {
+        title: 'Homepage alternative',
+        desc: '',
+        src: 'greentube-stargames-8.jpg'
+      },
+      {
+        title: 'Skill category',
+        desc: 'The "Spielen" buttons was made with css only.',
+        src: 'greentube-stargames-9.jpg'
+      },
+      {
+        title: 'Live casino',
+        desc: 'Early implementation of live casino games.',
+        src: 'greentube-stargames-10.jpg'
+      },
+      {
+        title: 'Live casino',
+        desc: 'Early implementation of live casino games.',
+        src: 'greentube-stargames-11.jpg'
+      },
+      {
+        title: 'Casino category',
+        desc: 'Just like other platforms, Stargames was also translated to many languages.',
+        src: 'greentube-stargames-11.jpg'
+      },
+      {
+        title: 'Casino category',
+        desc: 'Newer implementation of the same category',
+        src: 'greentube-stargames-12.jpg'
+      },
+      {
+        title: 'Games list',
+        desc: 'As usual, with badges.',
+        src: 'greentube-stargames-13.jpg'
+      },
+      {
+        title: 'Game window',
+        desc: 'Game is running in fullscreen.',
+        src: 'greentube-stargames-14.jpg'
+      },
+      {
+        title: 'Landing page',
+        desc: 'This is a sort of advertisment.',
+        src: 'greentube-stargames-16.jpg'
+      },
+      {
+        title: 'Pay in',
+        desc: '',
+        src: 'greentube-stargames-17.jpg'
+      },
+      {
+        title: 'Account details',
+        desc: '',
+        src: 'greentube-stargames-18.jpg'
+      }
+    ]
   },
   {
     title: 'StarVegas',
@@ -201,6 +339,53 @@ export const projects = [
       'HTML',
       'CSS',
     ],
+    images: [
+      {
+        title: 'Homepage',
+        desc: 'As far I remember, this was the very first design of the page',
+        src: 'greentube-starvegas-5.jpg'
+      },
+      {
+        title: 'Game categories',
+        desc: 'There was a background pattern and inset shadow on all the items.',
+        src: 'greentube-starvegas-9.png'
+      },
+      {
+        title: 'Homepage',
+        desc: 'The newer design',
+        src: 'greentube-starvegas-0.jpg'
+      },
+      {
+        title: 'Game categories',
+        desc: '',
+        src: 'greentube-starvegas-2.png'
+      },
+      {
+        title: 'Game details',
+        desc: '',
+        src: 'greentube-starvegas-3.jpg'
+      },
+      {
+        title: 'Pay in',
+        desc: '',
+        src: 'greentube-starvegas-4.jpg'
+      },
+      {
+        title: 'Landingpage',
+        desc: '',
+        src: 'greentube-starvegas-10.jpg'
+      },
+      {
+        title: 'Mobile ad',
+        desc: '',
+        src: 'greentube-starvegas-11.png'
+      },
+      {
+        title: 'Mobile',
+        desc: '',
+        src: 'greentube-starvegas-12.jpg'
+      },
+    ]
   },
   {
     title: 'Fenikss Casino',
@@ -211,6 +396,51 @@ export const projects = [
     url: 'http://starvegas.it',
     year: 2014,
     company: 'greentube',
+    tags: [
+      'HTML',
+      'CSS',
+    ],
+    images: [
+      {
+        title: 'Homepage',
+        desc: '',
+        src: 'greentube-fenikss-0.jpg'
+      },
+      {
+        title: 'Games category',
+        desc: '',
+        src: 'greentube-fenikss-1.jpg'
+      },
+      {
+        title: 'Homepage',
+        desc: 'Newer design',
+        src: 'greentube-fenikss-2.jpg'
+      },
+    ]
+  },
+  {
+    title: 'Skillgames',
+    alias: '',
+    subtitle: 'Online skill game platform',
+    description: 'Unfortunately this project was cancelled after a half year.',
+    image: '',
+    url: '',
+    year: 2015,
+    company: '',
+    tags: [
+      'HTML',
+      'CSS',
+    ],
+  },
+  {
+    title: 'Gametwist redesign',
+    alias: '',
+    subtitle: 'New platform for gameteist',
+    description: 'The project was not ready yet when I was not workin any more for greentube.',
+    image: '',
+    url: '',
+    year: 2016,
+    company: '',
     tags: [
       'HTML',
       'CSS',
@@ -412,6 +642,32 @@ export const privateProjects = [
       'Photography',
       'Flash',
     ],
+    images: [
+      {
+        title: 'Introduction',
+        src: 'magyargaleria.hu-0.jpg'
+      },
+      {
+        title: 'Sculptures',
+        src: 'magyargaleria.hu-1.jpg'
+      },
+      {
+        title: 'Ceramics',
+        src: 'magyargaleria.hu-2.jpg'
+      },
+      {
+        title: 'Services',
+        src: 'magyargaleria.hu-3.jpg'
+      },
+      {
+        title: 'About',
+        src: 'magyargaleria.hu-4.jpg'
+      },
+      {
+        title: 'Photos',
+        src: 'magyargaleria.hu-5.jpg'
+      },
+    ]
   },
   {
     title: 'manonet.org',
@@ -508,7 +764,7 @@ export const privateProjects = [
     title: 'Treasure Island',
     alias: 'greentube-treasure-island',
     subtitle: 'Applying for Front-End developer position to Greentube with an example',
-    description: 'And to be sure, a third one "Treasure Island". It was "<b>responsive</b>". I don&apos;t think that this concept was even exist in 2009, but still. "Treaure Island - Kreativity is treasure" - I&apos;m proud that it is still actual. Images are self made of course, mostly I hunted for usable Images on the web to create a montage.',
+    description: 'And to be sure, a third one "Treasure Island". It was "<b>responsive</b>". I don&apos;t think that this concept was even exist in 2009, but still. "Treaure Island - Kreativity is treasure" - I&apos;m proud that it is still actual. Design is self made of course, I hunted for usable Images on the web to create a montage. The skull is for example from a mecical flyer.',
     image: 'greentube-treasure-island.jpg',
     url: 'https://zyxneo.github.io/Applying-to-Greentube-Solution-3-Treasure-Island/',
     year: 2009,
@@ -518,42 +774,42 @@ export const privateProjects = [
     ],
     images: [
       {
-        title: '',
+        title: 'Responsive layout',
         desc: '',
         src: 'greentube-treasure-island-0.jpg'
       },
       {
-        title: '',
-        desc: '',
+        title: 'Pirate no1',
+        desc: 'The bottle on the bottom is linked as E-Mail',
         src: 'greentube-treasure-island-1.jpg'
       },
       {
-        title: '',
+        title: 'Pirate no2',
         desc: '',
         src: 'greentube-treasure-island-2.jpg'
       },
       {
-        title: '',
+        title: 'Treasure map',
         desc: '',
         src: 'greentube-treasure-island-3.jpg'
       },
       {
-        title: '',
+        title: 'Pirate no4',
         desc: '',
         src: 'greentube-treasure-island-4.jpg'
       },
       {
-        title: '',
+        title: 'Treasure map visited links',
         desc: '',
         src: 'greentube-treasure-island-5.jpg'
       },
       {
-        title: '',
+        title: 'Island in the background',
         desc: '',
         src: 'greentube-treasure-island-6.jpg'
       },
       {
-        title: '',
+        title: 'Pirate no3',
         desc: '',
         src: 'greentube-treasure-island-7.jpg'
       }

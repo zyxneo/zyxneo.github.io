@@ -88,7 +88,7 @@ class Slideshow extends React.PureComponent<SlideshowProps, State> {
                   key={item.src}
                   as='a'
                   onClick={() => (this.setSelected(index))}
-                  className={(index === selectedIndex) ? 'slideshow selected' : 'slideshow deselected'}
+                  className={(index === selectedIndex) ? 'slideshow thumbnail selected' : 'slideshow thumbnail deselected'}
                 />
               ))
             }
