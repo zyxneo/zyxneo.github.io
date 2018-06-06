@@ -15,6 +15,7 @@ const FixedMenu = () => (
       <Menu.Item as={Link} to='/'>Home</Menu.Item>
       <Menu.Item as={Link} to='/work'>Work</Menu.Item>
       <Menu.Item as={Link} to='/projects'>Projects</Menu.Item>
+      <Menu.Item as={Link} to='/private'>Private</Menu.Item>
 
       <Menu.Menu position='right'>
         <Menu.Menu position='right'>

@@ -23,7 +23,7 @@ const LayoutFooter = () => (
             </List>
           </Grid.Column>
           <Grid.Column width={5}>
-            <Header inverted as='h4' content='Author' />
+            <Header inverted as='h4' content='Contact' />
             <List link inverted>
               <List.Item as='li'>Szilágyi Balázs</List.Item>
               <List.Item as='li'><a href='mailto:zyxneo@gmail.com'>zyxneo@gmail.com</a></List.Item>

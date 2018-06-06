@@ -11,10 +11,13 @@ import {
   Popup,
 } from 'semantic-ui-react'
 
-import ImageList from '../components/ImageList'
+import {
+  Disclaimer,
+  ImageList
+} from '../components'
 
 import { work } from './worklist'
-import { projects } from './projectlist'
+import workplaceProjects from '../db/workplaceProjects'
 
 const ProjectPreview = (props) => {
   const {
@@ -45,7 +48,7 @@ const WorkItem = (props) => {
     furtherProjects
   } = props
 
-  const workplaceProjects = projects.filter(p => p.company === workplaceId)
+  const projects = workplaceProjects.filter(p => p.company === workplaceId)
   const LogoUrl = `/images/work/${workplaceId}/${workplaceLogo}`
 
   return (
@@ -57,9 +60,9 @@ const WorkItem = (props) => {
         <Item.Meta>({workedFrom} - {workedTill})</Item.Meta>
         <Item.Description><em>Job description:</em> <div dangerouslySetInnerHTML={{__html: jobDescription}} /></Item.Description>
 
-        {!!workplaceProjects.length && <Item.Header>Projects</Item.Header>}
-        {!!workplaceProjects.length && <Image.Group size='tiny'>
-          {workplaceProjects.map(item => (
+        {!!projects.length && <Item.Header>Projects</Item.Header>}
+        {!!projects.length && <Image.Group size='tiny'>
+          {projects.map(item => (
             <Popup
               key={item.src}
               trigger={
@@ -94,9 +97,7 @@ const WorkPage = () => (
   <Container className="work-content">
     <h1>Work</h1>
 
-    <h4>Disclaimer</h4>
-
-    <p>Please notice that none of the mentioned online projects on this page are my property. They can be changed in any time by the owners. There is a high chance, that the example projects may not reflect they state at the point when I was workin on them. The following list was made by me, based on my workexperience, without any permission or agreement of the companies, owners or stakeholders. I was worked as a team member in all of the companies, we was made teamwork, none of the projects are my individual work.</p>
+    <Disclaimer />
 
     <Item.Group divided>
       {work.map(item => (<WorkItem {...item} key={item.workplaceId} />))}

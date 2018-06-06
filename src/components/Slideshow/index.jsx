@@ -7,6 +7,7 @@ import {
   Container,
   Grid,
   Header,
+  Icon,
   List,
   Image,
   Modal,
@@ -21,13 +22,13 @@ type SlideshowImage = {
 type SlideshowProps = {
   items: Array<SlideshowImage>,
   item: SlideshowImage,
-  selectedIndex: Number,
+  selectedIndex: number,
   title: string,
   alias: string,
 }
 
 type State = {
-  selectedIndex: Number
+  selectedIndex: number
 }
 
 const inlineStyle = {
@@ -45,6 +46,20 @@ class Slideshow extends React.PureComponent<SlideshowProps, State> {
 
   setSelected = (id: Number) => {
     this.setState({ selectedIndex: id });
+  }
+
+  showPrew = () => {
+    const currentIndex = this.state.selectedIndex;
+    if (currentIndex > 0) {
+      this.setState({ selectedIndex: currentIndex - 1 });
+    }
+  }
+
+  showNext = () => {
+    const currentIndex = this.state.selectedIndex;
+    if (currentIndex < this.props.items.length - 1) {
+      this.setState({ selectedIndex: currentIndex + 1 });
+    }
   }
 
   render() {
@@ -72,12 +87,22 @@ class Slideshow extends React.PureComponent<SlideshowProps, State> {
         <Modal.Header>
           <Header>{title} - {selectedItem.title}</Header>
         </Modal.Header>
-        <Modal.Content image scrolling>
-          <Container textAlign='center' className="slideshow content">
-            <Image className="slideshow" src={`/images/projects/${alias}/${selectedItem.src}`} />
-            <div className="slideshow desc" dangerouslySetInnerHTML={{__html: selectedItem.desc}} />
-          </Container>
-        </Modal.Content>
+        <div className="slideshow wrapper">
+
+          <div onClick={this.showPrew} className="paging prew">
+            <Icon name="chevron left" size="huge" circular/>
+          </div>
+          <div onClick={this.showNext} className="paging next">
+            <Icon name="chevron right" size="huge" circular/>
+          </div>
+
+          <Modal.Content image scrolling className="slideshow body">
+            <Container textAlign='center' className="slideshow content">
+              <Image className="slideshow" src={`/images/projects/${alias}/${selectedItem.src}`} />
+              <div className="slideshow desc" dangerouslySetInnerHTML={{__html: selectedItem.desc}} />
+            </Container>
+          </Modal.Content>
+        </div>
         <Modal.Actions textAlign='center'>
           <Container textAlign='center'>
             <Image.Group size='tiny'>
