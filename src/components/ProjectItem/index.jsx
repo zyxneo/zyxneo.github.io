@@ -9,10 +9,13 @@ import {
 } from 'semantic-ui-react'
 
 import {
+  ImageLoader,
   Slideshow,
   Tag,
   VisitButton,
 } from '../index.js'
+
+import './projectItem.css'
 
 const ProjectTitle = (props) => {
   const { url, title } = props
@@ -43,8 +46,10 @@ const ProjectItem = (props) => {
   const imageUrl = `/images/projects/${alias}/${image}`
 
   return (
-    <Item id={alias}>
-      <Item.Image src={withPrefix(imageUrl)} />
+    <Item id={alias} className="projectItem">
+      <Item.Image>
+        <ImageLoader src={withPrefix(imageUrl)} />
+      </Item.Image>
       <Item.Content>
         <ProjectTitle url={url} title={title} />
         <Item.Meta>{subtitle} - {year}</Item.Meta>

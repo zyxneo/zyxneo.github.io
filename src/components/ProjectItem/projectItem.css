@@ -1,0 +1,8 @@
+/* center loader vertically */
+.ui.items > .item.projectItem > .image:not(.ui) {
+  height: 175px;
+}
+
+.item.projectItem .image-loader-loaded {
+  width: 100%;
+}

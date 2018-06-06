@@ -8,10 +8,14 @@ import {
   Grid,
   Header,
   Icon,
-  List,
   Image,
+  List,
   Modal,
 } from 'semantic-ui-react'
+
+import {
+  ImageLoader,
+} from '../index.js'
 
 import './slideshow.css';
 
@@ -27,7 +31,7 @@ type SlideshowProps = {
   alias: string,
 }
 
-type State = {
+type SlideshowState = {
   selectedIndex: number
 }
 
@@ -39,10 +43,19 @@ const inlineStyle = {
   }
 };
 
-class Slideshow extends React.PureComponent<SlideshowProps, State> {
+class Slideshow extends React.PureComponent<SlideshowProps, SlideshowState> {
+  props: SlideshowProps;
+  state: SlideshowState;
+
+  imageContainer: HTMLElement;
+
   state = {
     selectedIndex: this.props.selectedIndex || 0
   };
+
+  componentDidUpdate = () => {
+    document.getElementById('slideshowUniquId').scrollTop = 0
+  }
 
   setSelected = (id: Number) => {
     this.setState({ selectedIndex: id });
@@ -72,14 +85,19 @@ class Slideshow extends React.PureComponent<SlideshowProps, State> {
     } = this.props;
 
     const selectedItem = items[selectedIndex]
+
+    const showPreviousPaginator = (selectedIndex !== 0)
+    const showNextPaginator = (selectedIndex !== items.length - 1)
+
     return (
       <Modal
         trigger={
           <Image
-            src={`/images/projects/${alias}/${item.src}`}
             as='a'
             className="thumbnail"
-          />
+          >
+            <ImageLoader src={`/images/projects/${alias}/${item.src}`}/>
+          </Image>
         }
         closeIcon
         style={inlineStyle.modal}
@@ -89,21 +107,21 @@ class Slideshow extends React.PureComponent<SlideshowProps, State> {
         </Modal.Header>
         <div className="slideshow wrapper">
 
-          <div onClick={this.showPrew} className="paging prew">
+          {showPreviousPaginator && <div onClick={this.showPrew} className="paging prew">
             <Icon name="chevron left" size="huge" circular/>
-          </div>
-          <div onClick={this.showNext} className="paging next">
+          </div>}
+          {showNextPaginator && <div onClick={this.showNext} className="paging next">
             <Icon name="chevron right" size="huge" circular/>
-          </div>
+          </div>}
 
-          <Modal.Content image scrolling className="slideshow body">
+          <Modal.Content image scrolling className="slideshow body" id="slideshowUniquId">
             <Container textAlign='center' className="slideshow content">
               <Image className="slideshow" src={`/images/projects/${alias}/${selectedItem.src}`} />
               <div className="slideshow desc" dangerouslySetInnerHTML={{__html: selectedItem.desc}} />
             </Container>
           </Modal.Content>
         </div>
-        <Modal.Actions textAlign='center'>
+        <Modal.Actions>
           <Container textAlign='center'>
             <Image.Group size='tiny'>
             {

@@ -1,0 +1,22 @@
+.image-loader-container {
+  /*
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  */
+}
+
+.image-loader-container .loader {
+  width: 1em;
+  height: 1em;
+}
+
+.image-loader-loaded {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.image-loader-fade-in {
+  opacity: 1;
+}

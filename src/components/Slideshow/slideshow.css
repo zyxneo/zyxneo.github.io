@@ -1,5 +1,10 @@
-.ui.image.slideshow.thumbnail  {
+.ui.image.slideshow.thumbnail {
   transition: opacity .2s;
+}
+
+.ui.image.thumbnail .image-loader-container.isLoading {
+  width: 80px;
+  height: 80px;
 }
 
 .ui.image.slideshow.thumbnail.deselected {
@@ -44,6 +49,7 @@
   width: 25%;
   opacity: 0;
   transition: opacity .2s;
+  cursor: pointer;
 }
 
 .paging:hover {

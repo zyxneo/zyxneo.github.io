@@ -4,6 +4,7 @@ import Disclaimer from './Disclaimer';
 import Footer from './Footer';
 import Header from './Header';
 import ImageList from './ImageList';
+import ImageLoader from './ImageLoader';
 import ProjectItem from './ProjectItem';
 import Slideshow from './Slideshow';
 import Tag from './Tag';
@@ -14,6 +15,7 @@ export {
   Footer,
   Header,
   ImageList,
+  ImageLoader,
   ProjectItem,
   Slideshow,
   Tag,
