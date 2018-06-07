@@ -16,7 +16,7 @@ import {
   ImageList
 } from '../components'
 
-import { work } from './worklist'
+import { work } from '../db/worklist'
 import workplaceProjects from '../db/workplaceProjects'
 
 const ProjectPreview = (props) => {
