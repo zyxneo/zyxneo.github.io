@@ -13,7 +13,9 @@ import {
 
 import {
   Disclaimer,
-  ImageList
+  ImageList,
+  ImageLoader,
+  Tag,
 } from '../components'
 
 import { work } from '../db/worklist'
@@ -60,25 +62,34 @@ const WorkItem = (props) => {
         <Item.Meta>({workedFrom} - {workedTill})</Item.Meta>
         <Item.Description><em>Job description:</em> <div dangerouslySetInnerHTML={{__html: jobDescription}} /></Item.Description>
 
-        {!!projects.length && <Item.Header>Projects</Item.Header>}
-        {!!projects.length && <Image.Group size='tiny'>
+        {!!projects.length && <Item.Header className="itemHeader">Related Projects</Item.Header>}
+        {!!projects.length && <Item.Group>
           {projects.map(item => (
-            <Popup
+            <Item
               key={item.src}
-              trigger={
-                <Image
-                  src={`/images/projects/${item.alias}/${item.image}`}
-                  as={Link}
-                  to={`/projects#${item.alias}`}
-                  className="thumbnail"
-                />
-              }
-              content={<div><b>{item.title}</b><p>{item.subtitle}</p></div>}
-            />
+              className="workProjectItem"
+            >
+              <Item.Image
+                as={Link}
+                to={`/projects#${item.alias}`}
+                size="tiny"
+              >
+                <ImageLoader src={`/images/projects/${item.alias}/${item.image}`} />
+              </Item.Image>
+              <Item.Content>
+                <Item.Header as={Link} to={`/projects#${item.alias}`}>{item.title}</Item.Header>
+                <Item.Meta>{item.subtitle} - {item.year}</Item.Meta>
+                <Item.Extra>
+                  {
+                    item.tags.map(item => (<Tag content={item} key={item} size="mini" />))
+                  }
+                </Item.Extra>
+              </Item.Content>
+            </Item>
           ))}
-        </Image.Group>}
+        </Item.Group>}
 
-        {furtherProjects && <Item.Header>Further Projects:</Item.Header>}
+  {furtherProjects && <Item.Header className="itemHeader">Further Projects</Item.Header>}
         {furtherProjects &&
           <ul>
           {furtherProjects.map(item => (

@@ -419,34 +419,6 @@ const workplaceProjects = [
     ]
   },
   {
-    title: 'Skillgames',
-    alias: '',
-    subtitle: 'Online skill game platform',
-    description: 'Unfortunately this project was cancelled after a half year.',
-    image: '',
-    url: '',
-    year: 2015,
-    company: '',
-    tags: [
-      'HTML',
-      'CSS',
-    ],
-  },
-  {
-    title: 'Gametwist redesign',
-    alias: '',
-    subtitle: 'New platform for gameteist',
-    description: 'The project was not ready yet when I was not workin any more for greentube.',
-    image: '',
-    url: '',
-    year: 2016,
-    company: '',
-    tags: [
-      'HTML',
-      'CSS',
-    ],
-  },
-  {
     title: 'win2day.at',
     alias: 'win2day.at',
     subtitle: 'an Austrian Lottery platform',

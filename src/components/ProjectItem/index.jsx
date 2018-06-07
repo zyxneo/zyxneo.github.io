@@ -60,6 +60,9 @@ const ProjectItem = (props) => {
           }
           <VisitButton url={url} />
         </Item.Extra>
+
+        <Item.Header className="itemHeader">Screenshots</Item.Header>
+
         <Image.Group size='tiny'>
           {
             images && images.map((item, index) => (

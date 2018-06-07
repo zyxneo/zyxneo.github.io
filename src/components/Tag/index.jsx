@@ -8,10 +8,14 @@ import {
 } from 'semantic-ui-react'
 
 const Tag = (props) => {
-  const { content } = props
+  const {
+    content,
+  } = props
   let icon
   let color
   let description
+
+  const size = props.size || 'small'
 
   switch (content) {
     case 'CSS':
@@ -75,7 +79,14 @@ const Tag = (props) => {
   }
   return (
     <Popup
-      trigger={<Label icon={icon} content={content} color={color} size='small' />}
+      trigger={
+        <Label
+          icon={icon}
+          content={content}
+          color={color}
+          size={size}
+        />
+      }
       content={description}
     />
   )

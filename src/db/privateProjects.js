@@ -386,8 +386,8 @@ const privateProjects = [
   {
     title: 'Óvári Gazdászok Szövetsége',
     alias: 'ovarigazdasz.hu',
-    subtitle: 'Óvári Gazdászok Szövetsége',
-    description: 'I was studied on the West Hungarian University. My friend asked me for help, to create a website for the ###. So I helped by the setup of the webpage, and he published the content. My part was only technical administration and formatting the page to they needs.',
+    subtitle: 'Alumni Association of University of West Hungary - Faculty of Agricultural and Food Sciences',
+    description: 'I was studied on the West Hungarian University. My friend asked me for help, to create a website for the Alumni Association of the university. So I helped by the setup of the webpage, and he published the content. My part was only technical administration and formatting the page to they needs.',
     image: 'ovarigazdasz.hu.jpg',
     url: 'http://ovarigazdasz.hu/',
     year: 2013,

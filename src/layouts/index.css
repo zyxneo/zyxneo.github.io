@@ -23,10 +23,14 @@ body {
   padding-bottom: 5em;
 }
 
-.ui.tiny.image,
-.ui.tiny.images .image,
+.ui.tiny.image.thumbnail,
+.ui.tiny.images .image.thumbnail,
 .ui.tiny.images img,
 .ui.tiny.images svg {
   width: auto;
   height: 80px;
+}
+
+.ui.items > .item > .content > .header.itemHeader {
+  margin: 1em 0 .5em;
 }
