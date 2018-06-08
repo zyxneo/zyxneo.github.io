@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-projects-jsx": [
-      "component---src-pages-projects-jsx-9c5d2d51991add8da991.js",
-      "component---src-pages-projects-jsx-9c5d2d51991add8da991.js.map"
+      "component---src-pages-projects-jsx-7ccc3c0424d9fc0262b0.js",
+      "component---src-pages-projects-jsx-7ccc3c0424d9fc0262b0.js.map"
     ],
     "path---work": [
       "path---work-a0e39f21c11f6a62c5ab.js",
@@ -13,16 +13,16 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-d62139f9d2504b45fc38.js",
-      "component---src-layouts-index-jsx-d62139f9d2504b45fc38.js.map"
+      "component---src-layouts-index-jsx-20349540fc32f905f670.js",
+      "component---src-layouts-index-jsx-20349540fc32f905f670.js.map"
     ],
     "path---projects": [
       "path---projects-a0e39f21c11f6a62c5ab.js",
       "path---projects-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-private-jsx": [
-      "component---src-pages-private-jsx-191db33a4f0d951b0e8f.js",
-      "component---src-pages-private-jsx-191db33a4f0d951b0e8f.js.map"
+      "component---src-pages-private-jsx-7612d0e29c1a800fa5fc.js",
+      "component---src-pages-private-jsx-7612d0e29c1a800fa5fc.js.map"
     ],
     "path---private": [
       "path---private-a0e39f21c11f6a62c5ab.js",
@@ -51,9 +51,9 @@
       "component---src-pages-index-jsx-3057e1d30e810e99d42e.js.map"
     ],
     "app": [
-      "app-4f9701eb5ceb63d51e75.js",
+      "app-ef419ef613411504574e.js",
       "build-js-styles.css",
-      "app-4f9701eb5ceb63d51e75.js.map",
+      "app-ef419ef613411504574e.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
@@ -61,8 +61,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-work-jsx": [
-      "component---src-pages-work-jsx-8911282203b7b7ea3dbf.js",
-      "component---src-pages-work-jsx-8911282203b7b7ea3dbf.js.map"
+      "component---src-pages-work-jsx-74e0e6262d5b9761cbbb.js",
+      "component---src-pages-work-jsx-74e0e6262d5b9761cbbb.js.map"
     ]
   }
 }
