@@ -17,7 +17,12 @@ import {
 
 import './projectItem.css'
 
-const ProjectTitle = (props) => {
+type ProjectTitleProps = {
+  title: string,
+  url: string,
+}
+
+const ProjectTitle = (props: ProjectTitleProps) => {
   const { url, title } = props
 
   if (url === '' || typeof url === 'undefined') {
@@ -30,17 +35,35 @@ const ProjectTitle = (props) => {
   )
 }
 
-const ProjectItem = (props) => {
+export type ProjectImageProps = {
+  desc?: string,
+  title?: string,
+  src: string,
+}
+
+type ProjectItemProps = {
+  alias: string,
+  description: string,
+  image: string,
+  images?: Array<ProjectImageProps>,
+  subtitle: string,
+  tags: Array<string>,
+  title: string,
+  url: string,
+  year: string | number,
+}
+
+const ProjectItem = (props: ProjectItemProps) => {
   const {
-    title,
     alias,
-    subtitle,
     description,
     image,
+    images,
+    subtitle,
+    tags,
+    title,
     url,
     year,
-    tags,
-    images
   } = props
 
   const imageUrl = `/images/projects/${alias}/${image}`

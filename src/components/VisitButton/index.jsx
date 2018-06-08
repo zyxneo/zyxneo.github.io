@@ -7,7 +7,11 @@ import {
   Icon,
 } from 'semantic-ui-react'
 
-const VisitButton = (props) => {
+type VisitButtonProps = {
+  url: string;
+}
+
+const VisitButton = (props: VisitButtonProps) => {
   const { url } = props
 
   if (url === '' || typeof url === 'undefined') {

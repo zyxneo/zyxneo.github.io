@@ -22,5 +22,6 @@ deploy:
 script:
   - "npm i -g gatsby"
   - "npm i"
+  - "npm run lint"
 after_success:
   - "npm run deploy"

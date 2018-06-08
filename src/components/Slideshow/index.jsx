@@ -17,15 +17,13 @@ import {
   ImageLoader,
 } from '../index.js'
 
+import type { ProjectImageProps } from '../ProjectItem'
+
 import './slideshow.css';
 
-type SlideshowImage = {
-  src: string
-}
-
 type SlideshowProps = {
-  items: Array<SlideshowImage>,
-  item: SlideshowImage,
+  items: Array<ProjectImageProps>,
+  item: ProjectImageProps,
   selectedIndex: number,
   title: string,
   alias: string,
@@ -54,10 +52,11 @@ class Slideshow extends React.PureComponent<SlideshowProps, SlideshowState> {
   };
 
   componentDidUpdate = () => {
+    // $FlowIgnore
     document.getElementById('slideshowUniquId').scrollTop = 0
   }
 
-  setSelected = (id: Number) => {
+  setSelected = (id: number) => {
     this.setState({ selectedIndex: id });
   }
 

@@ -11,7 +11,12 @@ import {
   Menu,
 } from 'semantic-ui-react'
 
-const Header = (props) => (
+type HeaderProps = {
+  // $FlowIgnore
+  onChangeLanguage: Function
+}
+
+const Header = (props: HeaderProps) => (
   <Menu size='large'>
     <Container>
       <Menu.Item as={Link} to='/'>Home</Menu.Item>

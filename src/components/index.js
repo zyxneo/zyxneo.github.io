@@ -3,7 +3,6 @@
 import Disclaimer from './Disclaimer';
 import Footer from './Footer';
 import Header from './Header';
-import ImageList from './ImageList';
 import ImageLoader from './ImageLoader';
 import ProjectItem from './ProjectItem';
 import Slideshow from './Slideshow';
@@ -14,7 +13,6 @@ export {
   Disclaimer,
   Footer,
   Header,
-  ImageList,
   ImageLoader,
   ProjectItem,
   Slideshow,

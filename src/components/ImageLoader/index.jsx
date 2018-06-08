@@ -3,7 +3,7 @@
 import React from 'react';
 
 import {
-  Loader,
+  Loader, HtmlImageProps,
 } from 'semantic-ui-react'
 
 import './ImageLoader.css';
@@ -13,16 +13,18 @@ type ImageLoaderProps = {
 }
 
 type ImageLoaderState = {
-  isLoading: boolean
+  isLoading: boolean,
+  ImageLoaderImg?: null
 }
 
 class ImageLoader extends React.Component<ImageLoaderProps, ImageLoaderState> {
   props: ImageLoaderProps;
   state: ImageLoaderState;
+  ImageLoaderImg: HtmlImageProps;
 
-  constructor(props) {
-    super(props);
-    this.ImageLoaderHd = null;
+  constructor() {
+    super()
+    this.ImageLoaderImg = null;
 
     this.state = {
       isLoading: false
@@ -31,23 +33,23 @@ class ImageLoader extends React.Component<ImageLoaderProps, ImageLoaderState> {
 
   componentDidMount() {
 
-    const hdLoaderImg = new Image();
+    const LoaderImg = new Image();
 
-    hdLoaderImg.src = `${this.props.src}`;
+    LoaderImg.src = `${this.props.src}`;
 
-    hdLoaderImg.onloadstart = () => {
+    LoaderImg.onloadstart = () => {
       this.setState({ isLoading: true });
     }
 
-    hdLoaderImg.onload = () => {
+    LoaderImg.onload = () => {
 
       this.setState({ isLoading: false });
 
-      this.ImageLoaderHd.setAttribute(
+      this.ImageLoaderImg.setAttribute(
         'src',
         this.props.src
       );
-      this.ImageLoaderHd.classList.add('image-loader-fade-in');
+      this.ImageLoaderImg.classList.add('image-loader-fade-in');
     }
 
 
@@ -61,7 +63,7 @@ class ImageLoader extends React.Component<ImageLoaderProps, ImageLoaderState> {
 
         <img
           className="image-loader-loaded"
-          ref={imageLoadedElem => this.ImageLoaderHd = imageLoadedElem}
+          ref={imageLoadedElem => this.ImageLoaderImg = imageLoadedElem}
         />
 
         <Loader active={isLoading} />

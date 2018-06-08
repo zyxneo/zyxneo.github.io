@@ -1,3 +1,4 @@
+// @flow
 
 const workplaceProjects = [
   {
@@ -283,11 +284,6 @@ const workplaceProjects = [
         title: 'Live casino',
         desc: 'Early implementation of live casino games.',
         src: 'greentube-stargames-10.jpg'
-      },
-      {
-        title: 'Live casino',
-        desc: 'Early implementation of live casino games.',
-        src: 'greentube-stargames-11.jpg'
       },
       {
         title: 'Casino category',

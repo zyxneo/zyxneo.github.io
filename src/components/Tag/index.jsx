@@ -7,7 +7,12 @@ import {
   Popup,
 } from 'semantic-ui-react'
 
-const Tag = (props) => {
+export type TagProps = {
+  content: string;
+  size?: 'mini' |'tiny' | 'small' | 'medium' | 'large' | 'big' | 'huge' | 'massive';
+}
+
+const Tag = (props: TagProps) => {
   const {
     content,
   } = props

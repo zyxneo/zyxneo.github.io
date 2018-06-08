@@ -15,7 +15,6 @@ import {
 
 import {
   Disclaimer,
-  ImageList,
   ImageLoader,
   Tag,
 } from '../components'
@@ -77,7 +76,7 @@ const WorkItem = (props) => {
         {!!projects.length && <Item.Group>
           {projects.map(item => (
             <Item
-              key={item.src}
+              key={item.alias}
               className="workProjectItem"
             >
               <Item.Image
@@ -104,7 +103,7 @@ const WorkItem = (props) => {
         {furtherProjects &&
           <ul>
           {furtherProjects.map(item => (
-            <li><a href={item}>{item}</a></li>
+            <li key={item}><a href={item}>{item}</a></li>
           ))}
           </ul>
         }

@@ -8,6 +8,8 @@
 
 [libs]
 ./flow-typed
+node_modules/iflow-react-intl/index.js.flow
+node_modules/iflow-react-router/index.js.flow
 
 [lints]
 

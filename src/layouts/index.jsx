@@ -1,17 +1,22 @@
 // @flow
 
 import React from 'react'
+import type { Node } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import { addLocaleData, IntlProvider, FormattedMessage } from 'react-intl'
 
+// $FlowIgnore
 import de from 'react-intl/locale-data/de';
+// $FlowIgnore
 import hu from 'react-intl/locale-data/hu';
+// $FlowIgnore
 import en from 'react-intl/locale-data/en';
 
 import messageKeys from '../../translations/locales';
 
+// $FlowIgnore
 import 'semantic-ui-css/semantic.min.css'
 
 import Header from '../components/Header'
@@ -31,9 +36,19 @@ let i18nConfig = {
   messages: messageKeys['en']
 };
 
-class TemplateWrapper extends React.Component {
+type TemplateWrapperProps = {
+  // $FlowIgnore
+  children: any
+}
 
-  onChangeLanguage = (lang) => {
+type TemplateWrapperState = {
+  locale: string
+}
+class TemplateWrapper extends React.Component<TemplateWrapperProps, TemplateWrapperState> {
+  props: TemplateWrapperProps
+  state: TemplateWrapperState
+
+  onChangeLanguage = (lang: string) => {
 
     switch (lang) {
         case 'en': i18nConfig.messages = messageKeys['en']; break;
