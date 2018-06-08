@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-projects-jsx": [
-      "component---src-pages-projects-jsx-7ccc3c0424d9fc0262b0.js",
-      "component---src-pages-projects-jsx-7ccc3c0424d9fc0262b0.js.map"
+      "component---src-pages-projects-jsx-292554436064a27b4456.js",
+      "component---src-pages-projects-jsx-292554436064a27b4456.js.map"
     ],
     "path---work": [
       "path---work-a0e39f21c11f6a62c5ab.js",
@@ -13,16 +13,16 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-20349540fc32f905f670.js",
-      "component---src-layouts-index-jsx-20349540fc32f905f670.js.map"
+      "component---src-layouts-index-jsx-835aae02204acf3c0672.js",
+      "component---src-layouts-index-jsx-835aae02204acf3c0672.js.map"
     ],
     "path---projects": [
       "path---projects-a0e39f21c11f6a62c5ab.js",
       "path---projects-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-private-jsx": [
-      "component---src-pages-private-jsx-7612d0e29c1a800fa5fc.js",
-      "component---src-pages-private-jsx-7612d0e29c1a800fa5fc.js.map"
+      "component---src-pages-private-jsx-c4fcb79a4d104ae2acc2.js",
+      "component---src-pages-private-jsx-c4fcb79a4d104ae2acc2.js.map"
     ],
     "path---private": [
       "path---private-a0e39f21c11f6a62c5ab.js",
@@ -37,9 +37,9 @@
       "component---src-pages-404-js-06f9629d9fc3f8498e72.js.map"
     ],
     "commons": [
-      "commons-5a19bfbb773af8d6bdab.js",
+      "commons-b4d874d38b686d602e2c.js",
       "build-js-styles.css",
-      "commons-5a19bfbb773af8d6bdab.js.map",
+      "commons-b4d874d38b686d602e2c.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -61,8 +61,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-work-jsx": [
-      "component---src-pages-work-jsx-74e0e6262d5b9761cbbb.js",
-      "component---src-pages-work-jsx-74e0e6262d5b9761cbbb.js.map"
+      "component---src-pages-work-jsx-8af2d4d2b154635a69bc.js",
+      "component---src-pages-work-jsx-8af2d4d2b154635a69bc.js.map"
     ]
   }
 }
