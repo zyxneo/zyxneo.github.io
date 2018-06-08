@@ -3,6 +3,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
+
 import {
   Container,
   Header,
@@ -18,7 +20,16 @@ import {
   Tag,
 } from '../components'
 
-import { work } from '../db/worklist'
+import { work as work_en } from '../db/worklist_en'
+import { work as work_hu } from '../db/worklist_hu'
+import { work as work_de } from '../db/worklist_de'
+
+const works = {
+  en: work_en,
+  hu: work_hu,
+  de: work_de,
+};
+
 import workplaceProjects from '../db/workplaceProjects'
 
 const ProjectPreview = (props) => {
@@ -104,16 +115,22 @@ const WorkItem = (props) => {
   )
 }
 
-const WorkPage = () => (
+const propTypes = {
+  intl: intlShape.isRequired,
+};
+
+const WorkPage = ({intl}) => (
   <Container className="work-content">
-    <h1>Work</h1>
+    <h1><FormattedMessage id="work.title" defaultMessage="Munka"/></h1>
 
     <Disclaimer />
 
     <Item.Group divided>
-      {work.map(item => (<WorkItem {...item} key={item.workplaceId} />))}
+      {works[intl.locale].map(item => (<WorkItem {...item} key={item.workplaceId} />))}
     </Item.Group>
   </Container>
 )
 
-export default WorkPage
+WorkPage.propTypes = propTypes
+
+export default injectIntl(WorkPage)

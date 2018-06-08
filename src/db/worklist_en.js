@@ -1,4 +1,5 @@
 // @flow
+import { addLocaleData, IntlProvider, FormattedMessage } from 'react-intl'
 
 export const work = [
   {

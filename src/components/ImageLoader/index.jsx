@@ -55,7 +55,7 @@ class ImageLoader extends React.Component<ImageLoaderProps, ImageLoaderState> {
 
   render() {
     const { isLoading } = this.state
-    const isLoadingClass = isLoading ? 'isLoading' : null
+    const isLoadingClass = isLoading ? 'isLoading' : ''
     return (
       <div className={`image-loader-container ${isLoadingClass}`}>
 

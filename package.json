@@ -8,6 +8,7 @@
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "react-helmet": "^5.2.0",
+    "react-intl": "^2.4.0",
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.80.0"
   },
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "babel-plugin-flow-react-proptypes": "^21.0.0",
+    "babel-plugin-react-intl": "^2.4.0",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
