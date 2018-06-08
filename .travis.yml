@@ -1,18 +1,26 @@
 language: node_js
-os:
-- linux
+notifications:
+  email:
+    recipients:
+      - zyxneo@gmail.com
+    on_success: always
+    on_failure: always
 node_js:
-- '8'
-script:
-- npm install
-- npm run deploy
+  - "stable"
+cache:
+  directories:
+  - node_modules
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: "$GH_TOKEN"
   keep-history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  target-branch: master
   on:
-    branch: master
-env:
-  global:
-  - secure: v7VIKr1EzCumamSnxnscm2o9ZnI+yYJdaN/YZanCYsA3RVh6i1jYUcouZ7JjGlVXJlMSH56W4WyBulc/zDANQAZbolAqsEhDD52UL+EEEpFUXdhyIr6dnyu5fRjU15MUZSSgdRv3PRCbtXF6j7d440BO5jrOpYLRt+ULMt5cw4Yi67zZ/AD+mtc0GmLIfFIravgZQtH+ddCfbmJcmKYp/bv6Jt2dUWY6b4ndg4l89a11qbgkmVTfTQtjun06s5Km4HW67JvCgyWZcCy75XPqQ7lsuUdsY3snd9oyIIiAq6bBxm/BHSHoxkZ4D3+yHV45di2B6zyCR+qYBft5vxV8X1zcxF+r5GbadOeejxFSwuRosI6k0XAeK9GhTuAHpPW9K9LQQKdaA5dA0Ecp+2TtsuS/CeRA3lvpZ5XLFCILoKUD7M8zipYPZzLSzhfUqCf5EWg2YMdRWT7IH1WWwOqMFuHjwuj7wlqW5F/KaCjHeXxjYbQSHqWCirKMFeI6O779qQYlG2LBUf2jhHu9daoqFTYWo3rGBaxY/i13k6Epe2lGmeJjQUiaHwvh6AJ7B306eDrhvsXjlpvTeGfroHcVQtDbQDWHfkkHIG+h0/fdac75XdUQ0Ke0S5+3qHApyic0Qc8aCqdOFxL7qg8V7G9fBokhuVhx3DwbUB8SPgstyFI=
+    branch: dev
+script:
+  - "npm i -g gatsby"
+  - "npm i"
+after_success:
+  - "npm run deploy"
