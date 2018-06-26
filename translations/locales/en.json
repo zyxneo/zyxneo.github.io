@@ -1,3 +1,26 @@
 {
+  "disclaimer.title": "Disclaimer",
+  "disclaimer.body": "Please notice that none of the mentioned online projects on this page are my property. They can be changed in any time by the owners. There is a high chance, that the example projects may not reflect they state at the point when I was workin on them. The following list was made by me, based on my workexperience, without any permission or agreement of the companies, owners or stakeholders. I was worked as a team member in all of the companies, we was made teamwork, none of the projects are my individual work.",
+  "nav.home": "Home",
+  "nav.work": "Work",
+  "nav.projects": "Projects",
+  "nav.private": "Private",
+  "private.title": "Private Websites",
+  "private.desc": "Below listed several pages from my free-time projects. I made them for myself for fun, or for my friends.",
+
+  "projectItem.itemHeader.screenshots": "Screenshots",
+  "projectItem.offline": "Offline",
+  "projectItem.visit": "Visit",
+
+  "tag.bootstrap.desc": "Layout is built on top of Bootstrap CSS",
+  "tag.css.desc": "Creation of SCSS/CSS, layout, styling",
+  "tag.flash.desc": "Made with Macromedia/Adobe Flash",
+  "tag.googleMaps.desc": "Google Maps API is used",
+  "tag.graphicDesign.desc": "At least layout was designed by me",
+  "tag.html.desc": "Creation of HTML, templates, basic SEO",
+  "tag.joomla.desc": "Made with Joomla! content management system",
+  "tag.jquery.desc": "Jquery javascript library is used",
+  "tag.photography.desc": "Photos was made by me",
+
   "work.title": "Work"
 }

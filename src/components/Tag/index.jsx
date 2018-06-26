@@ -2,6 +2,8 @@
 
 import React from 'react'
 
+import { IntlProvider, FormattedMessage } from 'react-intl'
+
 import {
   Label,
   Popup,
@@ -26,55 +28,64 @@ const Tag = (props: TagProps) => {
     case 'CSS':
       icon = 'diamond'
       color = 'olive'
-      description = 'Creation of SCSS/CSS, layout, styling'
+      description =
+      <FormattedMessage id="tag.css.desc" defaultMessage="Creation of SCSS/CSS, layout, styling"/>
       break
 
     case 'HTML':
       icon = 'code'
       color = 'purple'
-      description = 'Creation of HTML, templates, basic SEO'
+      description =
+      <FormattedMessage id="tag.html.desc" defaultMessage="Creation of HTML, templates, basic SEO"/>
       break
 
     case 'Flash':
       icon = 'lightning'
       color = 'red'
-      description = 'Made with Macromedia/Adobe Flash'
+      description =
+      <FormattedMessage id="tag.flash.desc" defaultMessage="Made with Macromedia/Adobe Flash"/>
       break
 
     case 'Joomla':
       icon = 'joomla'
       color = 'yellow'
-      description = 'Made with Joomla! content management system'
+      description =
+      <FormattedMessage id="tag.joomla.desc" defaultMessage="Made with Joomla! content management system"/>
       break
 
     case 'Bootstrap':
       icon = 'bold'
       color = 'blue'
-      description = 'Layout is built on top of Bootstrap CSS'
+      description =
+      <FormattedMessage id="tag.bootstrap.desc" defaultMessage="Layout is built on top of Bootstrap CSS"/>
       break
 
     case 'Jquery':
       icon = 'hand pointer'
       color = 'orange'
-      description = 'Jquery javascript library is used'
+      description =
+      <FormattedMessage id="tag.jquery.desc" defaultMessage="Jquery javascript library is used"/>
       break
 
     case 'Google Maps':
       icon = 'globe'
       color = 'brown'
-      description = 'Google Maps API is used'
+      description =
+      <FormattedMessage id="tag.googleMaps.desc" defaultMessage="Google Maps API is used"/>
       break
 
     case 'Photography':
       icon = 'photo'
       color = 'black'
-      description = 'Photos was made by me'
+      description =
+      <FormattedMessage id="tag.photography.desc" defaultMessage="Photos was made by me"/>
       break
 
     case 'Graphic Design':
       icon = 'newspaper'
       color = 'pink'
-      description = 'At least layout was designed by me'
+      description =
+      <FormattedMessage id="tag.graphicDesign.desc" defaultMessage="At least layout was designed by me"/>
       break
 
     default:

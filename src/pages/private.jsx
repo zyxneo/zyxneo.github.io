@@ -3,6 +3,8 @@
 import React from 'react'
 // import Link from 'gatsby-link';
 
+import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
+
 import {
   Container,
   Header,
@@ -16,12 +18,16 @@ import {
 
 import projects from '../db/privateProjects'
 
+const propTypes = {
+  intl: intlShape.isRequired,
+};
+
 const ProjectsPage = () => (
 
   <Container className="projects-content">
-    <h1>Private Websites</h1>
+    <h1><FormattedMessage id="private.title" defaultMessage="Private Websites"/></h1>
 
-    <p>Below listed several pages from my free-time projects. I made them for myself for fun, or for my friends.</p>
+    <p><FormattedMessage id="private.desc" defaultMessage="Below listed several pages from my free-time projects. I made them for myself for fun, or for my friends."/></p>
 
     <Item.Group divided>
       {projects.map(item => (<ProjectItem {...item} key={item.alias} />))}
@@ -38,4 +44,6 @@ const ProjectsPage = () => (
   </Container>
 )
 
-export default ProjectsPage
+ProjectsPage.propTypes = propTypes
+
+export default injectIntl(ProjectsPage)

@@ -1,3 +1,23 @@
 {
+  "disclaimer.title": "Aussteuerung",
+  "disclaimer.body": "Bitte berücksichtigen, dass keine einzige Werk auf diese Liste gehört zu mir. Die können jeder zeit von ihre Eigentümer geändert werden. Es gibt eine große Chance, dass die Beispiele nicht mehr die Zustand reflektieren, die sie damals gehabt hätten, wenn ich an den gearbetet habe. Die folgende Liste habe ich zusammengestellt, basiert auf meine Arbeitserfahrung, ohne Erlaubnis oder Zustimmung von Gesheftsführung, Firmen, oder Eigentümern. Ich var Mitarbeiter in Teams beim alle Firmen, wir haben gemiensam gearbeitet, keine einzige Werk is meine auschließliche Arbeit.",
+  "nav.home": "Startseite",
+  "nav.work": "Arbeitsplätze",
+  "nav.projects": "Projekte",
+  "nav.private": "Privat Projekte",
+  "private.title": "Privat Projekte",
+  "private.desc": "Auf die folgende Liste habe ich einige meine eigene Werke zusammensammelt. Es gibt welche di ich für meine eigene Interesse gemacht habe, manche habe ich für meine Freunden gemach.",
+  "projectItem.itemHeader.screenshots": "Screenshots",
+  "projectItem.offline": "Offline",
+  "projectItem.visit": "Anschauen",
+  "tag.bootstrap.desc": "Layout is auf Bootstrap CSS basiert",
+  "tag.css.desc": "Erstellung von SCSS/CSS, layout, styling",
+  "tag.flash.desc": "Mit Macromedia/Adobe Flash gemacht",
+  "tag.googleMaps.desc": "Google Maps API wurde verwendet",
+  "tag.graphicDesign.desc": "Zumindest layout war von mir erstellt",
+  "tag.html.desc": "Erstellung von HTML, Templaten, allgemeine SEO",
+  "tag.joomla.desc": "Joomla! content management system wurde verwendet",
+  "tag.jquery.desc": "Jquery javascript library wurde verwendet",
+  "tag.photography.desc": "Die Photos habe ich erstellt",
   "work.title": "Arbeitserfahrung"
 }

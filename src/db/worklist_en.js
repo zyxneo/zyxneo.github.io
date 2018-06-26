@@ -11,7 +11,7 @@ export const work = [
     workedFrom: 2008,
     workedTill: 2009,
     position: 'Graphic and Sitebuilder',
-    jobDescription: 'Creating graphic design for clients in Fireworks, "sliceing" the self made or other designs, creating web templates and implementing the templates into the multisite CMS system. Designing and programming flash banners or flash webpage components.',
+    jobDescription: 'Creating graphic design for clients in Fireworks, "slicing" the self made or other designs, creating web templates and implementing the templates into the multisite CMS system. Designing and programming flash banners or flash webpage components.',
     furtherProjects: [
       'https://teknosfestek.hu',
       'http://johidegkonyha.hu/',
@@ -80,8 +80,8 @@ export const work = [
     jobDescription:  '<h4><a href="http://win2day.at" target="_blank">Win2Day</a> platform frontend development.</h4>\
     <ul>\
     <li>The decision of the frontend architecture was already made when I was joined to the company. My task was to continue and finish it.</li>\
-    <li>The professional design was also created by the agency, but as Developer I was having some freedom to design, how the page should behave in different screen resolutions, how it should reat on the user actions, how elements shoud be animated. Because of the high amount of users many device was supported, and the developers should take care, that the page design fits to all of them in any conditions, like e.g.: the dropdown menü shold also work within an overlay on a small mobile screen even if there is no space left, or the items can not be scrolled.</li>\
-    <li>Becasue of my experience in the gaming industrie I was having the task to implement the games into the frontend. On the beginning it was look like an impossible task, because\
+    <li>The professional design was also created by the agency, but as Developer I was having some freedom to design, how the page should behave in different screen resolutions, how it should react on the user actions, how elements should be animated. Because of the high amount of users many device was supported, and the developers should take care, that the page design fits to all of them in any conditions, like e.g.: the dropdown menu should also work within an overlay on a small mobile screen even if there is no space left, or the items can not be scrolled.</li>\
+    <li>Because of my experience in the gaming industry I was having the task to implement the games into the frontend. On the beginning it was look like an impossible task, because\
       <ol>\
         <li>high amount of games was made with different technologies like flash or html5,</li>\
         <li>they was having very various sizes and aspect ratios,</li>\
@@ -94,10 +94,10 @@ export const work = [
         <li>Some games was designed only for desktop usage,</li>\
         <li>some only for mobile,</li>\
         <li>and some for both.</li>\
-        <li>Furthermore, - as usual - the agency worked separatly from the customer company, so we only received some example games, not all of them, for each and every possible cases.</li>\
-      </ol>This was definitely the biggest challange in the frontend, because the games was the core concept of the platform.</li>\
-    <li>During the daily work while I was implementing pages and features I was continously experimenting and thinking, and with the help of my colleges and the backend developers of the client, after some good ideas, we was successfully fulfilled the task, and all of the planned games was implemented.</li>\
-    <li>Also several interesting solutions was also created, like the CSS only Lotto Balls, the flexbox "grid like" responsive accordion, or the "real-time" Tournaments items.</li>\
+        <li>Furthermore, - as usual - the agency worked separately from the customer company, so we only received some example games, not all of them, for each and every possible cases.</li>\
+      </ol>This was definitely the biggest challenge in the frontend, because the games was the core concept of the platform.</li>\
+    <li>During the daily work while I was implementing pages and features I was continuously experimenting and thinking, and with the help of my colleges and the backend developers of the client, after some good ideas, we was successfully fulfilled the task, and all of the planned games was implemented.</li>\
+    <li>Also several interesting solutions was created, like the CSS only Lotto Balls, the flexbox "grid like" responsive accordion, or the "real-time" Tournaments items.</li>\
     </ul>\
     ',
   },

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "projectItem.offline",
+    "defaultMessage": "Offline"
+  },
+  {
+    "id": "projectItem.visit",
+    "defaultMessage": "Visit"
+  }
+]

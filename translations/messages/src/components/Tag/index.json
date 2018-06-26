@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tag.css.desc",
+    "defaultMessage": "Creation of SCSS/CSS, layout, styling"
+  },
+  {
+    "id": "tag.html.desc",
+    "defaultMessage": "Creation of HTML, templates, basic SEO"
+  },
+  {
+    "id": "tag.flash.desc",
+    "defaultMessage": "Made with Macromedia/Adobe Flash"
+  },
+  {
+    "id": "tag.joomla.desc",
+    "defaultMessage": "Made with Joomla! content management system"
+  },
+  {
+    "id": "tag.bootstrap.desc",
+    "defaultMessage": "Layout is built on top of Bootstrap CSS"
+  },
+  {
+    "id": "tag.jquery.desc",
+    "defaultMessage": "Jquery javascript library is used"
+  },
+  {
+    "id": "tag.googleMaps.desc",
+    "defaultMessage": "Google Maps API is used"
+  },
+  {
+    "id": "tag.photography.desc",
+    "defaultMessage": "Photos was made by me"
+  },
+  {
+    "id": "tag.graphicDesign.desc",
+    "defaultMessage": "At least layout was designed by me"
+  }
+]

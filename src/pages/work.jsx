@@ -120,7 +120,7 @@ const propTypes = {
 
 const WorkPage = ({intl}) => (
   <Container className="work-content">
-    <h1><FormattedMessage id="work.title" defaultMessage="Munka"/></h1>
+    <h1><FormattedMessage id="work.title" defaultMessage="Work"/></h1>
 
     <Disclaimer />
 

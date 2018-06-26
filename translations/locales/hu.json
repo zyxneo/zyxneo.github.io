@@ -1,3 +1,23 @@
 {
+  "disclaimer.title": "Kiegészítés",
+  "disclaimer.body": "Kérlek, vedd figyelembe, hogy az említett online projektek egyike sem az én tulajdonom. A tulajdonosaik bármikor megváltoztathatják azokat. Nagy az esélye, hogy a példák nem tükrözik azt az állapotot, amely munkám idején érvényes volt. Az alábbi listát magam állítottam össze a munkahelyi munkáim alapján, a munkáltatóim, a cégek vezetői, termékek tulajdonosai, és bármely egyéb érdekelt személy beleegyezése nélkül. Valamennyi munkahelyen csapattagként dolgoztam, minden munkát közösen végeztünk, egyetlen említett példa sem az én kizárólagos munkám.",
+  "nav.home": "Kezdőlap",
+  "nav.work": "Munkahelyek",
+  "nav.projects": "Munkák",
+  "nav.private": "Saját munkák",
+  "private.title": "Saját munkák",
+  "private.desc": "Az alábbi listán néhány saját munkám látható. Van amit saját szórakoztatásomra csináltam, van amit a barátaim felkérésére.",
+  "projectItem.itemHeader.screenshots": "Képek",
+  "projectItem.offline": "Offline",
+  "projectItem.visit": "Megtekintés",
+  "tag.bootstrap.desc": "A layout Bootstrap CSS alapra lett felépítve",
+  "tag.css.desc": "Egyedi SCSS/CSS megoldás, layout, formázás",
+  "tag.flash.desc": "Macromedia/Adobe Flash technológiával készült",
+  "tag.googleMaps.desc": "Google Maps API integráció",
+  "tag.graphicDesign.desc": "Az oldal látványtervét magam készítettem",
+  "tag.html.desc": "A HTML alapstruktúra, sablonok és alapvető SEO a sajóat munkám",
+  "tag.joomla.desc": "Joomla! tartalomkezelő rendszerrel készült",
+  "tag.jquery.desc": "Jquery javascript kódkönyvtár segítségével készült",
+  "tag.photography.desc": "A fotókat magam készítettem",
   "work.title": "Munkatapasztalat"
 }

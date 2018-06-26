@@ -3,6 +3,8 @@
 import React from 'react'
 import { withPrefix } from 'gatsby-link'
 
+import { IntlProvider, FormattedMessage } from 'react-intl'
+
 import {
   Image,
   Item,
@@ -84,7 +86,9 @@ const ProjectItem = (props: ProjectItemProps) => {
           <VisitButton url={url} />
         </Item.Extra>
 
-        <Item.Header className="itemHeader">Screenshots</Item.Header>
+        <Item.Header className="itemHeader">
+          <FormattedMessage id="projectItem.itemHeader.screenshots" defaultMessage="Screenshots"/>
+        </Item.Header>
 
         <Image.Group size='tiny'>
           {

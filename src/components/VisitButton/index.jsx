@@ -2,6 +2,8 @@
 
 import React from 'react'
 
+import { IntlProvider, FormattedMessage } from 'react-intl'
+
 import {
   Button,
   Icon,
@@ -17,13 +19,13 @@ const VisitButton = (props: VisitButtonProps) => {
   if (url === '' || typeof url === 'undefined') {
     return (
       <Button disabled floated='right'>
-        offline
+        <FormattedMessage id="projectItem.offline" defaultMessage="Offline"/>
       </Button>
     )
   }
   return (
     <Button as='a' target='_blank' primary floated='right' href={url}>
-      visit
+      <FormattedMessage id="projectItem.visit" defaultMessage="Visit"/>
       <Icon name='right chevron' />
     </Button>
   )
