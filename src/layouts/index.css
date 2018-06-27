@@ -2,6 +2,10 @@ body {
   background: #ddd;
 }
 
+.ui.items > .item .meta {
+  color: rgba(0, 0, 0, .5);
+}
+
 .ui.image.thumbnail {
   vertical-align: top;
   display: inline-flex;

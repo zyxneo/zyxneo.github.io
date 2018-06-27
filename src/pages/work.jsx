@@ -19,15 +19,7 @@ import {
   Tag,
 } from '../components'
 
-import { work as work_en } from '../db/worklist_en'
-import { work as work_hu } from '../db/worklist_hu'
-import { work as work_de } from '../db/worklist_de'
-
-const works = {
-  en: work_en,
-  hu: work_hu,
-  de: work_de,
-};
+import worklist from '../db/worklist'
 
 import workplaceProjects from '../db/workplaceProjects'
 
@@ -68,11 +60,20 @@ const WorkItem = (props) => {
       <Item.Image src={LogoUrl} />
 
       <Item.Content>
-        <Item.Header>{position} at <a target='_blank' href={workplaceUrl}>{workplaceName}</a> </Item.Header>
+        <Item.Header>
+          {position}
+          <span className="meta"> <FormattedMessage id="work.at.position" defaultMessage="at"/> </span>
+          <a target='_blank' href={workplaceUrl}>{workplaceName}</a>
+        </Item.Header>
         <Item.Meta>({workedFrom} - {workedTill})</Item.Meta>
-        <Item.Description><em>Job description:</em> <div dangerouslySetInnerHTML={{__html: jobDescription}} /></Item.Description>
+        <Item.Description>
+          <em><FormattedMessage id="work.jobDescription" defaultMessage="Job description"/>:</em>
+          <div>{jobDescription}</div>
+        </Item.Description>
 
-        {!!projects.length && <Item.Header className="itemHeader">Related Projects</Item.Header>}
+        {!!projects.length && <Item.Header className="itemHeader">
+          <FormattedMessage id="work.projects" defaultMessage="Related Projects"/>
+        </Item.Header>}
         {!!projects.length && <Item.Group>
           {projects.map(item => (
             <Item
@@ -99,7 +100,9 @@ const WorkItem = (props) => {
           ))}
         </Item.Group>}
 
-  {furtherProjects && <Item.Header className="itemHeader">Further Projects</Item.Header>}
+      {furtherProjects && <Item.Header className="itemHeader">
+        <FormattedMessage id="work.furtherProjects" defaultMessage="Further Projects"/>
+      </Item.Header>}
         {furtherProjects &&
           <ul>
           {furtherProjects.map(item => (
@@ -125,7 +128,7 @@ const WorkPage = ({intl}) => (
     <Disclaimer />
 
     <Item.Group divided>
-      {works[intl.locale].map(item => (<WorkItem {...item} key={item.workplaceId} />))}
+      {worklist.map(item => (<WorkItem {...item} key={item.workplaceId} />))}
     </Item.Group>
   </Container>
 )

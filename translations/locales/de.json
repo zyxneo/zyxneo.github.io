@@ -19,5 +19,13 @@
   "tag.joomla.desc": "Joomla! content management system wurde verwendet",
   "tag.jquery.desc": "Jquery javascript library wurde verwendet",
   "tag.photography.desc": "Die Photos habe ich erstellt",
-  "work.title": "Arbeitserfahrung"
+
+  "work.title": "Arbeitserfahrung",
+  "work.at.position": "beim",
+  "work.jobDescription": "Tätigkeiten",
+  "work.projects": "Projekte",
+  "work.furtherProjects": "Weitere Projekte",
+
+  "infoartnet.position": "Grafik und Sitebuilder",
+  "infoartnet.jobDescription": "Erstellung von Grafiken für Kunden in Fireworks, von selbstgemachte oder andere Grafiken Templaten zu erstellen, und die ins Multisite CMS zu integrieren. Flash Banners und kleinere Flash Webseitenkomponente zu erstellen."
 }
