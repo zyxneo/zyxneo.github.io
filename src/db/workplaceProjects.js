@@ -367,6 +367,11 @@ const workplaceProjects = [
         src: 'greentube-starvegas-4.jpg'
       },
       {
+        title: 'Account details',
+        desc: '',
+        src: 'greentube-starvegas-6.jpg'
+      },
+      {
         title: 'Landingpage',
         desc: '',
         src: 'greentube-starvegas-10.jpg'
@@ -411,6 +416,26 @@ const workplaceProjects = [
         title: 'Homepage',
         desc: 'Newer design',
         src: 'greentube-fenikss-2.jpg'
+      },
+      {
+        title: 'Logged out',
+        desc: '',
+        src: 'greentube-fenikss-3.png'
+      },
+      {
+        title: 'Logged out mobile',
+        desc: '',
+        src: 'greentube-fenikss-4.png'
+      },
+      {
+        title: 'Game detail',
+        desc: '',
+        src: 'greentube-fenikss-5.png'
+      },
+      {
+        title: 'Personal settings',
+        desc: '',
+        src: 'greentube-fenikss-6.png'
       },
     ]
   },
