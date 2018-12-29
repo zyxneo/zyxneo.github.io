@@ -294,7 +294,7 @@ const privateProjects = [
     title: 'Treasure Island',
     alias: 'greentube-treasure-island',
     subtitle: 'Applying for Front-End developer position to Greentube with an example №3',
-    description: 'And to be sure, a third one "Treasure Island". It was "<b>responsive</b>". I don&apos;t think that this concept was even exist in 2009, but still. "Treaure Island - Kreativity is treasure" - I&apos;m proud that it is still actual. Design is self made of course, I hunted for usable Images on the web to create a montage. The skull is for example from a mecical flyer.',
+    description: 'And to be sure, a third one "Treasure Island". It was "<b>responsive</b>". I don&apos;t think that this concept was even exist in 2009, but still. "Treaure Island - Creativity is treasure" - I&apos;m proud that it is still actual. Design is self made of course, I hunted for usable Images on the web to create a montage. The skull is for example from a medical flyer.',
     image: 'greentube-treasure-island.jpg',
     url: 'https://zyxneo.github.io/Applying-to-Greentube-Solution-3-Treasure-Island/',
     year: 2009,

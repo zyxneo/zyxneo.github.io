@@ -53,7 +53,7 @@ const workplaceProjects = [
   {
     title: 'Győri Borlovag Club',
     alias: 'gyorilovag.hu',
-    subtitle: '',
+    subtitle: 'Wine Chevalier Club',
     description: '',
     image: 'gyorilovag.hu-1.jpg',
     url: 'http://gyorilovag.hu/ ',
@@ -84,7 +84,7 @@ const workplaceProjects = [
     subtitle: 'Restaurant webpage',
     description: '',
     image: 'ordogkonyha.hu-1.jpg',
-    url: '',
+    url: 'http://ordogkonyha.hu',
     year: 2009,
     company: 'infoartnet',
     tags: [
@@ -97,6 +97,28 @@ const workplaceProjects = [
         title: 'Homepage',
         desc: '',
         src: 'ordogkonyha.hu.jpg'
+      }
+    ]
+  },
+  {
+    title: 'Csemeteplussz',
+    alias: 'csemeteplussz.hu',
+    subtitle: 'Nursery garden webpage',
+    description: '',
+    image: 'csemeteplussz.hu-0.jpg',
+    url: 'http://csemeteplussz.hu',
+    year: 2009,
+    company: 'infoartnet',
+    tags: [
+      'Graphic Design',
+      'HTML',
+      'CSS'
+    ],
+    images: [
+      {
+        title: 'Homepage',
+        desc: '',
+        src: 'csemeteplussz.hu.jpg'
       }
     ]
   },

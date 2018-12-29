@@ -106,7 +106,7 @@ const WorkItem = (props) => {
         {furtherProjects &&
           <ul>
           {furtherProjects.map(item => (
-            <li key={item}><a href={item}>{item}</a></li>
+            <li key={item}>{item}</li>
           ))}
           </ul>
         }
