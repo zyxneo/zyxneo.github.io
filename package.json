@@ -22,6 +22,7 @@
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
+    "start": "gatsby develop",
     "fix": "eslint --fix --ext .js,.jsx src",
     "flow": "flow src",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
@@ -42,6 +43,7 @@
     "flow-bin": "^0.74.0",
     "gh-pages": "^1.2.0",
     "iflow-chartist": "^1.0.3",
+    "intl-messageformat-parser": "^1.4.0",
     "prettier": "^1.10.2",
     "prop-types": "^15.6.1"
   }

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "private.title",
+    "defaultMessage": "Private Websites"
+  },
+  {
+    "id": "private.desc",
+    "defaultMessage": "Below listed several pages from my free-time projects. I made them for myself for fun, or for my friends."
+  }
+]
