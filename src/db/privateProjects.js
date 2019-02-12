@@ -482,6 +482,59 @@ const privateProjects = [
       },
     ]
   },
+  {
+    title: 'Snow White',
+    alias: 'snow-white',
+    subtitle: 'Interpretation of Snow White fairytale (Hungarian only)',
+    description: 'Once upon a time there was Fairytales... Do we remember them? Do we get they message? Is there any message in these ancient stories at all? In this essay I do my best to prove that they are not just absolutely useful even today, but even that fairytales in general can help us the most in our personal development, regardless our age, position or any other circumstances.',
+    image: 'snow-white.jpg',
+    url: 'https://zyxneo.github.io/snow-white/',
+    year: '2018',
+    tags: [
+      'Gatsby',
+      'React',
+      'D3'
+    ],
+    images: [
+      {
+        src: 'snow-white1.jpg'
+      },
+      {
+        src: 'snow-white2.jpg'
+      },
+      {
+        src: 'snow-white3.jpg'
+      },
+    ],
+  },
+  {
+    title: 'D3 experiments',
+    alias: 'd3',
+    subtitle: 'Doing d3 tutorials, code examples and experiments',
+    description: 'A place to learn the popular, but non well known Data Driven Documents. A great chance to try it out together with react, and failing in a non-production environment. Masterning SVG and Canvas is also a goal of this lessions, the focus is more on learning, than providing anything useful here.',
+    image: 'd3.png',
+    url: 'https://zyxneo.github.io/d3/',
+    year: '2018',
+    tags: [
+      'Gatsby',
+      'React',
+      'D3'
+    ],
+    images: [
+      {
+        title: 'Simple bar chart',
+        src: 'simple-bar-chart.png'
+      },
+      {
+        title: 'Stacked to grouped bars',
+        src: 'stacked-to-grouped-bars.png'
+      },
+      {
+        title: 'Force directed graph',
+        src: 'force-directed-graph.png'
+      },
+    ],
+  },
 ]
 
 export default privateProjects

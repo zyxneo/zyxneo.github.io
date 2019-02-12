@@ -19,6 +19,9 @@
   "tag.joomla.desc": "Joomla! content management system wurde verwendet",
   "tag.jquery.desc": "Jquery javascript library wurde verwendet",
   "tag.photography.desc": "Die Photos habe ich erstellt",
+  "tag.gatsby.desc": "Mit Gatsby js erstellt",
+  "tag.react.desc": "React javascript framework wurde verwendet",
+  "tag.d3.desc": "Data Driven Documents (D3)",
 
   "work.title": "Arbeitserfahrung",
   "work.at.position": "beim",
@@ -27,5 +30,9 @@
   "work.furtherProjects": "Weitere Projekte",
 
   "infoartnet.position": "Grafik und Sitebuilder",
-  "infoartnet.jobDescription": "Erstellung von Grafiken für Kunden in Fireworks, von selbstgemachte oder andere Grafiken Templaten zu erstellen, und die ins Multisite CMS zu integrieren. Flash Banners und kleinere Flash Webseitenkomponente zu erstellen."
+  "infoartnet.jobDescription": "Erstellung von Grafiken für Kunden in Fireworks, von selbstgemachte oder andere Grafiken Templaten zu erstellen, und die ins Multisite CMS zu integrieren. Flash Banners und kleinere Flash Webseitenkomponente zu erstellen.",
+
+
+  "radarservices.position": "JavaScript Frontend Developer",
+  "radarservices.jobDescription": "<p>RadarServices ist Europas führendes Technologieunternehmen im Bereich Detection & Response. Im Mittelpunkt steht die zeitnahe Erkennung von Risiken für die Sicherheit der IT von Unternehmen und Behörden als Solution oder als Managed Service.</p><p>Weitere Information auf <a href='http://radarservices.com' target='_blank'>radarservices.com</a></p>"
 }

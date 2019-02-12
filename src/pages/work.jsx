@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
+import { injectIntl, intlShape, FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
 import {
   Container,
@@ -23,6 +23,17 @@ import worklist from '../db/worklist'
 
 import workplaceProjects from '../db/workplaceProjects'
 
+type WorkItemPropTypes = {
+  workplaceId: string;
+  workplaceName: string;
+  workplaceUrl: string;
+  workplaceLogo: string;
+  workplaceCity: string;
+  workedFrom: number | string;
+  workedTill: number | string;
+  furtherProjects?: [];
+};
+
 const ProjectPreview = (props) => {
   const {
     name,
@@ -38,7 +49,7 @@ const ProjectPreview = (props) => {
   )
 }
 
-const WorkItem = (props) => {
+const WorkItem = (props: WorkItemPropTypes) => {
   const {
     workplaceId,
     workplaceName,
@@ -47,8 +58,6 @@ const WorkItem = (props) => {
     workplaceCity,
     workedFrom,
     workedTill,
-    position,
-    jobDescription,
     furtherProjects
   } = props
 
@@ -61,14 +70,14 @@ const WorkItem = (props) => {
 
       <Item.Content>
         <Item.Header>
-          {position}
+          <FormattedMessage id={`${workplaceId}.position`} />
           <span className="meta"> <FormattedMessage id="work.at.position" defaultMessage="at"/> </span>
           <a target='_blank' href={workplaceUrl}>{workplaceName}</a>
         </Item.Header>
         <Item.Meta>({workedFrom} - {workedTill})</Item.Meta>
         <Item.Description>
           <em><FormattedMessage id="work.jobDescription" defaultMessage="Job description"/>:</em>
-          <div>{jobDescription}</div>
+          <div><FormattedHTMLMessage id={`${workplaceId}.jobDescription`} /></div>
         </Item.Description>
 
         {!!projects.length && <Item.Header className="itemHeader">

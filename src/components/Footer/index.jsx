@@ -17,12 +17,6 @@ const LayoutFooter = () => (
       <Grid divided inverted stackable>
         <Grid.Row>
           <Grid.Column width={5}>
-            <Header inverted as='h4' content='About' />
-            <List link inverted>
-              <List.Item as='a'>Soon</List.Item>
-            </List>
-          </Grid.Column>
-          <Grid.Column width={5}>
             <Header inverted as='h4' content='Contact' />
             <List link inverted>
               <List.Item as='li'>Szilágyi Balázs</List.Item>
@@ -43,7 +37,8 @@ const LayoutFooter = () => (
           <Grid.Column width={6}>
             <Header inverted as='h4' content='About' />
             <p>This is a demonstrational page of development tools, techniques, experiments and references.
-              <br />Hosted with 💗 on <a href='https://pages.github.com/'>GitHub Pages</a>
+              <br />
+              Built with <a href='https://www.gatsbyjs.org/'>Gatsby</a>, Hosted on <a href='https://pages.github.com/'>GitHub Pages</a> with 💗
             </p>
           </Grid.Column>
         </Grid.Row>

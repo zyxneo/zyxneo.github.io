@@ -34,5 +34,17 @@
   {
     "id": "tag.graphicDesign.desc",
     "defaultMessage": "At least layout was designed by me"
+  },
+  {
+    "id": "tag.gatsby.desc",
+    "defaultMessage": "Built with Gatsby js"
+  },
+  {
+    "id": "tag.react.desc",
+    "defaultMessage": "React javascript framework was used"
+  },
+  {
+    "id": "tag.d3.desc",
+    "defaultMessage": "Data driven documents"
   }
 ]

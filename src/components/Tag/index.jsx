@@ -62,7 +62,7 @@ const Tag = (props: TagProps) => {
 
     case 'Jquery':
       icon = 'hand pointer'
-      color = 'orange'
+      color = 'green'
       description =
       <FormattedMessage id="tag.jquery.desc" defaultMessage="Jquery javascript library is used"/>
       break
@@ -86,6 +86,27 @@ const Tag = (props: TagProps) => {
       color = 'pink'
       description =
       <FormattedMessage id="tag.graphicDesign.desc" defaultMessage="At least layout was designed by me"/>
+      break
+
+    case 'Gatsby':
+      icon = 'google'
+      color = 'violet'
+      description =
+      <FormattedMessage id="tag.gatsby.desc" defaultMessage="Built with Gatsby js"/>
+      break
+
+    case 'React':
+      icon = 'react'
+      color = 'teal'
+      description =
+      <FormattedMessage id="tag.react.desc" defaultMessage="React javascript framework was used"/>
+      break
+
+    case 'D3':
+      icon = 'chart line'
+      color = 'orange'
+      description =
+      <FormattedMessage id="tag.d3.desc" defaultMessage="Data driven documents"/>
       break
 
     default:

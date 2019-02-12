@@ -21,6 +21,7 @@ const worklist = [
       'vizisportok.hu',
       'febobo.hu',
       'gaszler.hu',
+      '...',
     ],
   },
   {
