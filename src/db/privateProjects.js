@@ -206,7 +206,7 @@ const privateProjects = [
     description: 'One of my favourite and definitely the biggest private project. I wanted to learn typing with ten fingers, like pople shoud normally. But in that time there was only books, or payed programs available. I was boring to copy the text from the books, so I decided to create a textinput in flash, which compares the string I write with the correct one. Than I highlighted the errors. Than displayed statistic and so on. So I was not learning anymore, but started to program. I liked it so much, that I published it on the net, so anyone could using it. It had a toplist too. Later it turned out, that the way it works is "not optimal" for the server. So I wrote a new version of it. And a new again, I think the fourth one was the one online the longest time. Based on the feedbacks people loved it, so it is still online, even if flash is death sine that. It has so many hidden features, that sometime it can suprise me too.',
     image: 'manonet.org.jpg',
     url: 'http://manonet.org',
-    year: '',
+    year: '2007',
     tags: [
       'Graphic Design',
       'Flash',
@@ -455,7 +455,7 @@ const privateProjects = [
     subtitle: '57th IALB and 7th EUFRAS Agriculture Conference 2018',
     description: 'It was a great pleasure and honor that I can helped by designing and implementing the webpage of 57th IALB and 7th EUFRAS Agriculture Conference. I was not expected that it will have so many visitors from around the world.',
     image: 'ialb-eufras-2018.org.jpg',
-    url: 'http://ialb-eufras-2018.org',
+    url: 'http://ialb-eufras-2018.ovarigazdasz.hu/hu/',
     year: '2017',
     tags: [
       'Graphic Design',
