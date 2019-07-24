@@ -70,10 +70,12 @@ class TemplateWrapper extends React.Component<TemplateWrapperProps, TemplateWrap
           <Helmet
             title="Portfolio"
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'description', content: 'Balázs Szilágyi\'s portfolio page' },
+              { name: 'keywords', content: 'front-end, frontend, developer, web' },
             ]}
-          />
+          >
+            <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+          </Helmet>
           <Header onChangeLanguage={this.onChangeLanguage}/>
 
             {this.props.children()}

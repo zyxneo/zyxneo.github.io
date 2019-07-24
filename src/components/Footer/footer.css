@@ -1,0 +1,159 @@
+/* Linked-in badge */
+
+.LI-badge-container.horizontal.dark {
+  box-shadow: none !important;
+}
+
+.LI-badge-container.horizontal.dark,
+.LI-badge-container.horizontal.dark html,
+.LI-badge-container.horizontal.dark body,
+.LI-badge-container.horizontal.dark div,
+.LI-badge-container.horizontal.dark span,
+.LI-badge-container.horizontal.dark applet,
+.LI-badge-container.horizontal.dark object,
+.LI-badge-container.horizontal.dark iframe,
+.LI-badge-container.horizontal.dark h1,
+.LI-badge-container.horizontal.dark h2,
+.LI-badge-container.horizontal.dark h3,
+.LI-badge-container.horizontal.dark h4,
+.LI-badge-container.horizontal.dark h5,
+.LI-badge-container.horizontal.dark h6,
+.LI-badge-container.horizontal.dark p,
+.LI-badge-container.horizontal.dark blockquote,
+.LI-badge-container.horizontal.dark pre,
+.LI-badge-container.horizontal.dark a,
+.LI-badge-container.horizontal.dark abbr,
+.LI-badge-container.horizontal.dark acronym,
+.LI-badge-container.horizontal.dark address,
+.LI-badge-container.horizontal.dark big,
+.LI-badge-container.horizontal.dark cite,
+.LI-badge-container.horizontal.dark code,
+.LI-badge-container.horizontal.dark del,
+.LI-badge-container.horizontal.dark dfn,
+.LI-badge-container.horizontal.dark em,
+.LI-badge-container.horizontal.dark img,
+.LI-badge-container.horizontal.dark ins,
+.LI-badge-container.horizontal.dark kbd,
+.LI-badge-container.horizontal.dark q,
+.LI-badge-container.horizontal.dark s,
+.LI-badge-container.horizontal.dark samp,
+.LI-badge-container.horizontal.dark small,
+.LI-badge-container.horizontal.dark strike,
+.LI-badge-container.horizontal.dark strong,
+.LI-badge-container.horizontal.dark sub,
+.LI-badge-container.horizontal.dark sup,
+.LI-badge-container.horizontal.dark tt,
+.LI-badge-container.horizontal.dark var,
+.LI-badge-container.horizontal.dark b,
+.LI-badge-container.horizontal.dark u,
+.LI-badge-container.horizontal.dark i,
+.LI-badge-container.horizontal.dark center,
+.LI-badge-container.horizontal.dark dl,
+.LI-badge-container.horizontal.dark dt,
+.LI-badge-container.horizontal.dark dd,
+.LI-badge-container.horizontal.dark ol,
+.LI-badge-container.horizontal.dark ul,
+.LI-badge-container.horizontal.dark li,
+.LI-badge-container.horizontal.dark fieldset,
+.LI-badge-container.horizontal.dark form,
+.LI-badge-container.horizontal.dark label,
+.LI-badge-container.horizontal.dark legend,
+.LI-badge-container.horizontal.dark table,
+.LI-badge-container.horizontal.dark caption,
+.LI-badge-container.horizontal.dark tbody,
+.LI-badge-container.horizontal.dark tfoot,
+.LI-badge-container.horizontal.dark thead,
+.LI-badge-container.horizontal.dark tr,
+.LI-badge-container.horizontal.dark th,
+.LI-badge-container.horizontal.dark td,
+.LI-badge-container.horizontal.dark article,
+.LI-badge-container.horizontal.dark aside,
+.LI-badge-container.horizontal.dark canvas,
+.LI-badge-container.horizontal.dark details,
+.LI-badge-container.horizontal.dark embed,
+.LI-badge-container.horizontal.dark figure,
+.LI-badge-container.horizontal.dark figcaption,
+.LI-badge-container.horizontal.dark footer,
+.LI-badge-container.horizontal.dark header,
+.LI-badge-container.horizontal.dark hgroup,
+.LI-badge-container.horizontal.dark menu,
+.LI-badge-container.horizontal.dark nav,
+.LI-badge-container.horizontal.dark output,
+.LI-badge-container.horizontal.dark ruby,
+.LI-badge-container.horizontal.dark section,
+.LI-badge-container.horizontal.dark summary,
+.LI-badge-container.horizontal.dark time,
+.LI-badge-container.horizontal.dark mark,
+.LI-badge-container.horizontal.dark audio,
+.LI-badge-container.horizontal.dark video {
+  background: #1b1c1d !important;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+}
+
+.LI-profile-badge .LI-badge-container.horizontal.dark {
+  width: auto !important;
+}
+
+.LI-profile-badge-header {
+  float: left !important;
+  width: 40% !important;
+}
+
+.LI-more-info {
+  overflow: hidden !important;
+  padding: 0 !important;
+}
+
+.LI-footer {
+  overflow: hidden !important;
+  display: flex !important;
+}
+
+.LI-footer .LI-logo {
+  position: relative !important;
+  bottom: auto !important;
+  right: auto !important;
+  margin-left: 14px !important;
+}
+
+.LI-badge-container.horizontal.dark .LI-name-container {
+  margin-top: 0 !important;
+}
+
+.LI-badge-container.horizontal.dark .LI-name a.hover,
+.LI-badge-container.horizontal.dark .LI-name a:hover,
+.LI-badge-container.horizontal.dark .LI-name a.focus,
+.LI-badge-container.horizontal.dark .LI-name a:focus {
+  color: #4183c4 !important;
+}
+
+.LI-badge-container.horizontal.dark .LI-name {
+  line-height: 1.28571429em !important;
+  margin: -0.14285714em 0 1rem !important;
+  font-size: 1.07142857rem !important;
+}
+
+.LI-badge-container.horizontal.dark .LI-name a {
+  font-size: 1.07142857rem !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 0 !important;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+  font-weight: 700 !important;
+  line-height: 1.28571429em !important;
+  text-transform: none !important;
+}
+
+.LI-badge-container.horizontal.dark .LI-title {
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.4285em !important;
+  padding: 0 !important;
+}
+
+.LI-badge-container.horizontal.dark .LI-field .LI-field-icon {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+/* Linked-in badge end */

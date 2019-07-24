@@ -2,6 +2,7 @@
 
 import React from 'react'
 // import Link from 'gatsby-link';
+import './footer.css'
 
 import {
   Container,
@@ -16,7 +17,10 @@ const LayoutFooter = () => (
     <Container>
       <Grid divided inverted stackable>
         <Grid.Row>
-          <Grid.Column width={5}>
+          <Grid.Column width={7}>
+            <div className="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="balázs-szilágyi-112987121"><a className="LI-simple-link" href='https://hu.linkedin.com/in/bal%C3%A1zs-szil%C3%A1gyi-112987121?trk=profile-badge'>Balázs Szilágyi</a></div>
+          </Grid.Column>
+          <Grid.Column width={4}>
             <Header inverted as='h4' content='Contact' />
             <List link inverted>
               <List.Item as='li'>Szilágyi Balázs</List.Item>
@@ -29,12 +33,9 @@ const LayoutFooter = () => (
                   <span className='username'> github</span>
                 </a>
               </List.Item>
-              <List.Item as='li'>
-                on <a href='https://hu.linkedin.com/in/balázs-szilágyi-112987121'>linkedin</a>
-              </List.Item>
             </List>
           </Grid.Column>
-          <Grid.Column width={6}>
+          <Grid.Column width={4}>
             <Header inverted as='h4' content='About' />
             <p>This is a demonstrational page of development tools, techniques, experiments and references.
               <br />
