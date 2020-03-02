@@ -75,6 +75,14 @@ class TemplateWrapper extends React.Component<TemplateWrapperProps, TemplateWrap
             ]}
           >
             <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4516268-13"></script>
+            <script type="application/ld+json">{`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-4516268-13');
+            `}</script>
+
           </Helmet>
           <Header onChangeLanguage={this.onChangeLanguage}/>
 
