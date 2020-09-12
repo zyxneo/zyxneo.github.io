@@ -53,14 +53,14 @@ const worklist = [
   },
   {
     workplaceId: 'radarservices',
-    workplaceName: 'RadarServices - Cybersecurity World',
-    workplaceUrl: 'http://radarservices.com',
-    workplaceLogo: 'radar_services_logo.svg',
+    workplaceName: 'Radar Cyber Security',
+    workplaceUrl: 'https://www.radarcs.com/',
+    workplaceLogo: 'radar_cyber_security.png',
     workplaceCity: 'Wien',
     workedFrom: 2017,
     workedTill: 'present',
     position: <FormattedMessage id="radarservices.position" defaultMessage="JavaScript Frontend Developer"/>,
-    jobDescription: <FormattedHTMLMessage id="radarservices.jobDescription" defaultMessage="RadarServices is a serious Cybersecurity company. I think even my jobdescription is a secret..."/>,
+    jobDescription: <FormattedHTMLMessage id="radarservices.jobDescription" defaultMessage="Radar Cyber Security is the only European supplier of Managed Detection & Response Solutions that provides its services based on inhouse developed technology. More than 10 years of research and development have resulted in the evolution of a comprehensive cybersecurity and IT risk detection platform we use every day to monitor the IT security of global market leaders of all sectors, as well as public authorities. Through our research we are a global leader in machine learning for IT monitoring, continuously incorporating the latest findings to the services we provide to our customers. Headquartered in Vienna (Austria), we run the largest Cyber Defense Center in Europe for managed services, attracting the best IT security professionals in the world."/>,
   },
 ];
 

@@ -2,7 +2,18 @@ body {
   background: #ddd;
 }
 
-.ui.items > .item .meta {
+#___gatsby, #gatsby-focus-wrapper, .layout {
+  flex: 1 1 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+.ui.items>.item .meta {
   color: rgba(0, 0, 0, .5);
 }
 
@@ -12,8 +23,7 @@ body {
   align-items: center;
 }
 
-.ui.tiny.image,
-.ui.tiny.images .image {
+.ui.tiny.image, .ui.tiny.images .image {
   overflow: hidden;
   display: inline-flex;
 }
@@ -22,19 +32,15 @@ body {
   flex: 1;
 }
 
-.work-content,
-.projects-content {
+.work-content, .projects-content {
   padding-bottom: 5em;
 }
 
-.ui.tiny.image.thumbnail,
-.ui.tiny.images .image.thumbnail,
-.ui.tiny.images img,
-.ui.tiny.images svg {
+.ui.tiny.image.thumbnail, .ui.tiny.images .image.thumbnail, .ui.tiny.images img, .ui.tiny.images svg {
   width: auto;
   height: 80px;
 }
 
-.ui.items > .item > .content > .header.itemHeader {
+.ui.items>.item>.content>.header.itemHeader {
   margin: 1em 0 .5em;
 }

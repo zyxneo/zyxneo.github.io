@@ -66,7 +66,7 @@ class TemplateWrapper extends React.Component<TemplateWrapperProps, TemplateWrap
   render() {
     return (
       <IntlProvider key={ i18nConfig.locale } locale={i18nConfig.locale} messages={i18nConfig.messages}>
-        <div>
+        <div className="layout">
           <Helmet
             title="Portfolio"
             meta={[
@@ -85,9 +85,11 @@ class TemplateWrapper extends React.Component<TemplateWrapperProps, TemplateWrap
 
           </Helmet>
           <Header onChangeLanguage={this.onChangeLanguage}/>
+          <div className="main">
 
             {this.props.children()}
 
+          </div>
           <Footer />
         </div>
       </IntlProvider>
