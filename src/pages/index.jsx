@@ -12,7 +12,7 @@ import {
 } from 'semantic-ui-react'
 
 const IndexPage = () => (
-  <div>
+  <div className="homePage">
     <Segment
       inverted
       textAlign='center'
