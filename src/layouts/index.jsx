@@ -74,7 +74,6 @@ class TemplateWrapper extends React.Component<TemplateWrapperProps, TemplateWrap
               { name: 'keywords', content: 'front-end, frontend, developer, web' },
             ]}
           >
-            <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4516268-13"></script>
             <script type="application/ld+json">{`
               window.dataLayer = window.dataLayer || [];
