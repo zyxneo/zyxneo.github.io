@@ -1,0 +1,183 @@
+.matrix-canvas {
+  background: #000;
+  background-image: url("/images/matrix.png");
+  background-size: contain;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.matrix-rain {
+  user-select: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.matrix-rainDrop {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  z-index: 1;
+  /* transform: scale(0) translate(0); */
+  transition: transform 2s ease;
+}
+
+.matrix-character {
+  color: #086e10;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.character__level1,
+.character__level2 {
+  position: absolute;
+}
+
+.character__level3 {
+  position: relative;
+  top: -26px;
+}
+
+.matrix-character--0 .character__level1 {
+  filter: blur(2px) contrast(500%);
+  color: #ceffd2;
+  text-shadow: 0px 0px 3px #16b15c, 0px 0px 4px #16b15c, 0px 0px 5px #16b15c,
+    0px 0px 6px #16b15c;
+}
+
+.matrix-character--0 .character__level2 {
+  color: #d8f474;
+  mix-blend-mode: hard-light;
+}
+
+.matrix-character--1 {
+  color: #a6f3ac;
+  text-shadow: 0px 0px 3px #0c8f47, 0px 0px 4px #0c8f47, 0px 0px 5px #0c8f47,
+    0px 0px 6px #0c8f47;
+  opacity: 0.95;
+}
+.matrix-character--2 {
+  text-shadow: 0px 0px 3px #057939, 0px 0px 4px #057939, 0px 0px 5px #057939,
+    0px 0px 6px #057939;
+  color: #70e07a;
+  opacity: 0.9;
+}
+.matrix-character--3 {
+  text-shadow: 0px 0px 3px #057939, 0px 0px 4px #057939, 0px 0px 5px #057939;
+  color: #4ecf59;
+  opacity: 0.85;
+}
+.matrix-character--4 {
+  text-shadow: 0px 0px 3px #057939, 0px 0px 4px #057939;
+  color: #34c240;
+  opacity: 0.8;
+}
+.matrix-character--5 {
+  text-shadow: 0px 0px 3px #057939;
+  filter: blur(0.5px);
+  color: #1cb329;
+  opacity: 0.75;
+}
+.matrix-character--6 {
+  filter: blur(0.5px);
+  color: #0ea71a;
+  opacity: 0.7;
+}
+.matrix-character--7 {
+  filter: blur(0.5px);
+  opacity: 0.65;
+}
+.matrix-character--8 {
+  filter: blur(0.5px);
+  opacity: 0.6;
+}
+.matrix-character--9 {
+  filter: blur(0.5px);
+  opacity: 0.55;
+}
+.matrix-character--10 {
+  filter: blur(1px);
+  opacity: 0.5;
+}
+.matrix-character--11 {
+  filter: blur(1px);
+  opacity: 0.45;
+}
+.matrix-character--12 {
+  filter: blur(1px);
+  opacity: 0.4;
+}
+.matrix-character--13 {
+  filter: blur(1px);
+  opacity: 0.35;
+}
+.matrix-character--14 {
+  filter: blur(1px);
+  opacity: 0.3;
+}
+.matrix-character--15 {
+  filter: blur(1px);
+  opacity: 0.25;
+}
+.matrix-character--16 {
+  filter: blur(2px);
+  opacity: 0.2;
+}
+.matrix-character--17 {
+  filter: blur(3px);
+  opacity: 0.15;
+}
+.matrix-character--18 {
+  filter: blur(4px);
+  opacity: 0.1;
+}
+.matrix-character--19 {
+  filter: blur(5px);
+  opacity: 0.05;
+}
+.matrix-character--20,
+.matrix-character--21,
+.matrix-character--22,
+.matrix-character--23,
+.matrix-character--24,
+.matrix-character--25,
+.matrix-character--26,
+.matrix-character--27,
+.matrix-character--28,
+.matrix-character--29,
+.matrix-character--30,
+.matrix-character--31,
+.matrix-character--32,
+.matrix-character--33,
+.matrix-character--34,
+.matrix-character--35,
+.matrix-character--36,
+.matrix-character--37,
+.matrix-character--38,
+.matrix-character--39,
+.matrix-character--40,
+.matrix-character--41,
+.matrix-character--42,
+.matrix-character--43,
+.matrix-character--44,
+.matrix-character--45,
+.matrix-character--46,
+.matrix-character--47,
+.matrix-character--48,
+.matrix-character--49,
+.matrix-character--50,
+.matrix-character--51,
+.matrix-character--52,
+.matrix-character--53,
+.matrix-character--54,
+.matrix-character--55,
+.matrix-character--56,
+.matrix-character--57,
+.matrix-character--58,
+.matrix-character--59,
+.matrix-character--60 {
+  visibility: hidden;
+}
