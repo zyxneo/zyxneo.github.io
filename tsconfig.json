@@ -1,0 +1,42 @@
+{
+  "include": ["./src/**/*", "src/global.d.ts"],
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["types/*", "*"]
+    },
+
+    /* Basic Options */
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "jsx": "preserve",
+    "outDir": "./public",
+    "isolatedModules": true,
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "public", ".cache"]
+}
