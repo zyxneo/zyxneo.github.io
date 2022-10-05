@@ -8,8 +8,8 @@ const originalChars =
 
 const columns = 30;
 const rows = 30;
-const characterRetype = 3;
-const interval = 10;
+const characterRetype = 5;
+const interval = 120;
 const shuffle = (str) => [...str].sort(() => Math.random() - 0.5).join("");
 const chars = shuffle(originalChars);
 const numberOfChars = chars.length;
