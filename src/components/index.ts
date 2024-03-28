@@ -1,3 +1,4 @@
+import ChatMessage from "./ChatMessage";
 import Disclaimer from "./Disclaimer";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -9,6 +10,7 @@ import Tag from "./Tag";
 import VisitButton from "./VisitButton";
 
 export {
+  ChatMessage,
   Disclaimer,
   Footer,
   Header,

@@ -41,6 +41,9 @@ const Header = ({ className }: Props) => {
         <Menu.Item as={Link} to="/private">
           <FormattedMessage id="nav.private" defaultMessage="Private" />
         </Menu.Item>
+        <Menu.Item as={Link} to="/ai">
+          <FormattedMessage id="nav.ai" defaultMessage="AI" />
+        </Menu.Item>
 
         <IntlContextConsumer>
           {({
